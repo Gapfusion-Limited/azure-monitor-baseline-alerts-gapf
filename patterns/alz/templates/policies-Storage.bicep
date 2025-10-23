@@ -70,6 +70,8 @@ var loadPolicyDefinitions = {
     // Used in both Storage and Management Policy Set Definitions
     loadTextContent('../../../services/Storage/storageAccounts/Deploy-SA-Availability-Alert.json')
     loadTextContent('../../../services/Storage/storageAccounts/Deploy-ActivityLog-SA-Delete-Alert.json')
+    // My new addition
+    loadTextContent('../../../services/Storage/storageAccounts/Deploy-SA-UsedCapacity-Alert.json')
   ]
   AzureCloud: []
   AzureChinaCloud: []
