@@ -5,7 +5,7 @@
   "properties": {
     "policyType": "Custom",
     "mode": "All",
-    "displayName": "Deploy Storage storageAccounts UsedCapacity Alert",
+    "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) - Storage Account UsedCapacity Alert",
     "description": "Policy to Audit/Deploy Storage storageAccounts UsedCapacity Alert",
     "metadata": {
       "version": "1.0.0-preview",
