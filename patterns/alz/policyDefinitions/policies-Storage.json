@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.38.33.27573",
-      "templateHash": "6720370349243031858"
+      "templateHash": "6273864076536168198"
     }
   },
   "parameters": {
@@ -437,7 +437,7 @@
                 "value": "[[[parameters('StorageAccountUsedCapacityWindowSize')]"
               },
               "evaluationFrequency": {
-                "value": "[[[parameters('StorageAccountUsedCapacityFrequency')]"
+                "value": "[[[parameters('StorageAccountUsedCapacityEvaluationFrequency')]"
               },
               "autoMitigate": {
                 "value": "[[[parameters('StorageAccountUsedCapacityAutoMitigate')]"
