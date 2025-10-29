@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.38.33.27573",
-      "templateHash": "17931137845901598018"
+      "templateHash": "15772734233442176659"
     }
   },
   "parameters": {
@@ -279,18 +279,19 @@
             }
           },
           "StorageAccountUsedCapacityAlertSeverity": {
-            "type": "int",
-            "defaultValue": 3,
-            "allowedValues": [
-              0,
-              1,
-              2,
-              3,
-              4
-            ],
+            "type": "String",
             "metadata": {
-              "description": "Severity of alert {0,1,2,3,4}"
-            }
+              "displayName": "Severity",
+              "description": "Severity of the Alert"
+            },
+            "allowedValues": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "defaultValue": "3"
           },
           "StorageAccountUsedCapacityoperator": {
             "type": "string",
@@ -421,7 +422,7 @@
             "policyDefinitionReferenceId": "ALZ_StorageAccountUsedCapacity",
             "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/b663a689-6db8-467d-8b5d-8cd34afe4b0e",
             "parameters": {
-              "alertSeverity": {
+              "severity": {
                 "value": "[[[parameters('StorageAccountUsedCapacityAlertSeverity')]"
               },
               "operator": {
