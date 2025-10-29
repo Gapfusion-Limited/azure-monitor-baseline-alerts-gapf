@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.38.33.27573",
-      "templateHash": "6273864076536168198"
+      "templateHash": "17795746408782499196"
     }
   },
   "parameters": {
@@ -336,7 +336,7 @@
             ],
             "defaultValue": "true"
           },
-          "StorageAccountUsedCapacityAlertEnabled": {
+          "StorageAccountUsedCapacityAlertState": {
             "type": "String",
             "metadata": {
               "displayName": "Alert State",

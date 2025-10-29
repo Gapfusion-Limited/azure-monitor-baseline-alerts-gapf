@@ -216,7 +216,7 @@
         ],
         "defaultValue": "true"
       },
-      "StorageAccountUsedCapacityAlertEnabled": {
+      "StorageAccountUsedCapacityAlertState": {
         "type": "String",
         "metadata": {
           "displayName": "Alert State",
