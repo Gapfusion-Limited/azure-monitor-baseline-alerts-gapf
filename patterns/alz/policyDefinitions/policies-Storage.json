@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.38.33.27573",
-      "templateHash": "13280230136339071394"
+      "templateHash": "17931137845901598018"
     }
   },
   "parameters": {
@@ -277,6 +277,86 @@
               "displayName": "Storage Account Delete Alert State",
               "description": "Alert state for the alert"
             }
+          },
+          "StorageAccountUsedCapacityAlertSeverity": {
+            "type": "int",
+            "defaultValue": 3,
+            "allowedValues": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "metadata": {
+              "description": "Severity of alert {0,1,2,3,4}"
+            }
+          },
+          "StorageAccountUsedCapacityoperator": {
+            "type": "string",
+            "defaultValue": "GreaterThan",
+            "allowedValues": [
+              "Equals",
+              "GreaterThan",
+              "GreaterThanOrEqual",
+              "LessThan",
+              "LessThanOrEqual"
+            ],
+            "metadata": {
+              "description": "Operator comparing the current value with the threshold value."
+            }
+          },
+          "StorageAccountUsedCapacitythreshold": {
+            "type": "string",
+            "defaultValue": "2251800000000000",
+            "metadata": {
+              "description": "The threshold value at which the alert is activated."
+            }
+          },
+          "StorageAccountUsedCapacitytimeAggregation": {
+            "type": "string",
+            "defaultValue": "Average",
+            "allowedValues": [
+              "Average",
+              "Minimum",
+              "Maximum",
+              "Total",
+              "Count"
+            ],
+            "metadata": {
+              "description": "How the data that is collected should be combined over time."
+            }
+          },
+          "StorageAccountUsedCapacitywindowSize": {
+            "type": "string",
+            "defaultValue": "PT1H",
+            "allowedValues": [
+              "PT1M",
+              "PT5M",
+              "PT15M",
+              "PT30M",
+              "PT1H",
+              "PT6H",
+              "PT12H",
+              "P1D"
+            ],
+            "metadata": {
+              "description": "Period of time used to monitor alert activity based on the threshold. Must be between one minute and one day. ISO 8601 duration format."
+            }
+          },
+          "StorageAccountUsedCapacityevaluationFrequency": {
+            "type": "string",
+            "defaultValue": "PT1H",
+            "allowedValues": [
+              "PT1M",
+              "PT5M",
+              "PT15M",
+              "PT30M",
+              "PT1H"
+            ],
+            "metadata": {
+              "description": "how often the metric alert is evaluated represented in ISO 8601 duration format"
+            }
           }
         },
         "policyDefinitions": [
@@ -328,6 +408,42 @@
               },
               "alertResourceGroupLocation": {
                 "value": "[[[parameters('ALZMonitorResourceGroupLocation')]"
+              },
+              "MonitorDisableTagName": {
+                "value": "[[[parameters('ALZMonitorDisableTagName')]"
+              },
+              "MonitorDisableTagValues": {
+                "value": "[[[parameters('ALZMonitorDisableTagValues')]"
+              }
+            }
+          },
+          {
+            "policyDefinitionReferenceId": "ALZ_StorageAccountUsedCapacity",
+            "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/b663a689-6db8-467d-8b5d-8cd34afe4b0e",
+            "parameters": {
+              "alertSeverity": {
+                "value": "[[[parameters('StorageAccountUsedCapacityAlertSeverity')]"
+              },
+              "operator": {
+                "value": "[[[parameters('StorageAccountUsedCapacityoperator')]"
+              },
+              "threshold": {
+                "value": "[[[parameters('StorageAccountUsedCapacityThreshold')]"
+              },
+              "timeAggregation": {
+                "value": "[[[parameters('StorageAccountUsedCapacitytimeAggregation')]"
+              },
+              "windowSize": {
+                "value": "[[[parameters('StorageAccountUsedCapacityWindowSize')]"
+              },
+              "evaluationFrequency": {
+                "value": "[[[parameters('StorageAccountUsedCapacityFrequency')]"
+              },
+              "effect": {
+                "value": "[[[parameters('StorageAccountUsedCapacityPolicyEffect')]"
+              },
+              "enabled": {
+                "value": "[[[parameters('StorageAccountUsedCapacityAlertState')]"
               },
               "MonitorDisableTagName": {
                 "value": "[[[parameters('ALZMonitorDisableTagName')]"
