@@ -317,7 +317,7 @@
             "value": "[[parameters('StorageAccountUsedCapacityWindowSize')]"
           },
           "evaluationFrequency": {
-            "value": "[[parameters('StorageAccountUsedCapacityFrequency')]"
+            "value": "[[parameters('StorageAccountUsedCapacityEvaluationFrequency')]"
           },
           "autoMitigate": {
             "value": "[[parameters('StorageAccountUsedCapacityAutoMitigate')]"
