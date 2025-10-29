@@ -173,42 +173,7 @@
         ],
         "defaultValue": "3"
       },
-      "StorageAccountUsedCapacityoperator": {
-        "type": "string",
-        "defaultValue": "GreaterThan",
-        "allowedValues": [
-          "Equals",
-          "GreaterThan",
-          "GreaterThanOrEqual",
-          "LessThan",
-          "LessThanOrEqual"
-        ],
-        "metadata": {
-          "description": "Operator comparing the current value with the threshold value."
-        }
-      },
-      "StorageAccountUsedCapacitythreshold": {
-        "type": "string",
-        "defaultValue": "2251800000000000",
-        "metadata": {
-          "description": "The threshold value at which the alert is activated."
-        }
-      },
-      "StorageAccountUsedCapacitytimeAggregation": {
-        "type": "string",
-        "defaultValue": "Average",
-        "allowedValues": [
-          "Average",
-          "Minimum",
-          "Maximum",
-          "Total",
-          "Count"
-        ],
-        "metadata": {
-          "description": "How the data that is collected should be combined over time."
-        }
-      },
-      "StorageAccountUsedCapacitywindowSize": {
+      "StorageAccountUsedCapacityWindowSize": {
         "type": "string",
         "defaultValue": "PT1H",
         "allowedValues": [
@@ -225,7 +190,7 @@
           "description": "Period of time used to monitor alert activity based on the threshold. Must be between one minute and one day. ISO 8601 duration format."
         }
       },
-      "StorageAccountUsedCapacityevaluationFrequency": {
+      "StorageAccountUsedCapacityEvaluationFrequency": {
         "type": "string",
         "defaultValue": "PT1H",
         "allowedValues": [
@@ -238,6 +203,49 @@
         "metadata": {
           "description": "how often the metric alert is evaluated represented in ISO 8601 duration format"
         }
+      },
+      "StorageAccountUsedCapacityAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Auto Mitigate",
+          "description": "Auto Mitigate for the alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "StorageAccountUsedCapacityAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Alert State",
+          "description": "Alert state for the alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "StorageAccountUsedCapacityThreshold": {
+        "type": "string",
+        "defaultValue": "2251800000000000",
+        "metadata": {
+          "description": "The threshold value at which the alert is activated."
+        }
+      },
+      "StorageAccountUsedCapacityPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Effect of the policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
       }
     },
     "policyDefinitions": [
@@ -305,26 +313,23 @@
           "severity": {
             "value": "[[parameters('StorageAccountUsedCapacityAlertSeverity')]"
           },
-          "operator": {
-            "value": "[[parameters('StorageAccountUsedCapacityoperator')]"
-          },
-          "threshold": {
-            "value": "[[parameters('StorageAccountUsedCapacityThreshold')]"
-          },
-          "timeAggregation": {
-            "value": "[[parameters('StorageAccountUsedCapacitytimeAggregation')]"
-          },
           "windowSize": {
             "value": "[[parameters('StorageAccountUsedCapacityWindowSize')]"
           },
           "evaluationFrequency": {
             "value": "[[parameters('StorageAccountUsedCapacityFrequency')]"
           },
-          "effect": {
-            "value": "[[parameters('StorageAccountUsedCapacityPolicyEffect')]"
+          "autoMitigate": {
+            "value": "[[parameters('StorageAccountUsedCapacityAutoMitigate')]"
           },
           "enabled": {
             "value": "[[parameters('StorageAccountUsedCapacityAlertState')]"
+          },
+          "threshold": {
+            "value": "[[parameters('StorageAccountUsedCapacityThreshold')]"
+          },
+          "effect": {
+            "value": "[[parameters('StorageAccountUsedCapacityPolicyEffect')]"
           },
           "MonitorDisableTagName": {
             "value": "[[parameters('ALZMonitorDisableTagName')]"
