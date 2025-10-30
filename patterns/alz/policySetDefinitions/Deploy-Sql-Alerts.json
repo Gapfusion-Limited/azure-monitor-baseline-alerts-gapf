@@ -153,43 +153,44 @@
           "disabled"
         ],
         "defaultValue": "deployIfNotExists"
-      },
-      "policyDefinitions": [
-        {
-          "policyDefinitionReferenceId": "ALZ_SqlDtuUsed",
-          "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/d26f4c8b-0461-4c57-b230-cbd1a5424db1",
-          "parameters": {
-            "severity": {
-              "value": "[[parameters('SqlDtuUsedAlertSeverity')]"
-            },
-            "windowSize": {
-              "value": "[[parameters('SqlDtuUsedWindowSize')]"
-            },
-            "evaluationFrequency": {
-              "value": "[[parameters('SqlDtuUsedEvaluationFrequency')]"
-            },
-            "effect": {
-              "value": "[[parameters('SqlDtuUsedPolicyEffect')]"
-            },
-            "autoMitigate": {
-              "value": "[[[parameters('SqlDtuUsedAutoMitigate')]"
-            },
-            "enabled": {
-              "value": "[[parameters('SqlDtuUsedAlertEnabled')]"
-            },
-            "threshold": {
-              "value": "[[parameters('SqlDtuUsedThreshold')]"
-            },
-            "MonitorDisableTagName": {
-              "value": "[[parameters('ALZMonitorDisableTagName')]"
-            },
-            "MonitorDisableTagValues": {
-              "value": "[[parameters('ALZMonitorDisableTagValues')]"
-            }
+      }
+    },
+    "policyDefinitions": [
+      {
+        "policyDefinitionReferenceId": "ALZ_SqlDtuUsed",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/d26f4c8b-0461-4c57-b230-cbd1a5424db1",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('SqlDtuUsedAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('SqlDtuUsedWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('SqlDtuUsedEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('SqlDtuUsedPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[[parameters('SqlDtuUsedAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('SqlDtuUsedAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('SqlDtuUsedThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
           }
         }
-      ],
-      "policyType": "Custom",
-      "policyDefinitionGroups": null
-    }
+      }
+    ],
+    "policyType": "Custom",
+    "policyDefinitionGroups": null
   }
+}
