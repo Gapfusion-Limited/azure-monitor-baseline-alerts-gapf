@@ -1,0 +1,195 @@
+{
+  "type": "Microsoft.Authorization/policySetDefinitions",
+  "apiVersion": "2021-06-01",
+  "name": "Alerting-Sql",
+  "properties": {
+    "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) for Sql",
+    "description": "This initiative deploys Azure Monitor Baseline Alerts (AMBA-ALZ) to monitor Sql Services such as Sql databases, Elastic Pools, Managed Instances.",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "Monitoring",
+      "source": "https://github.com/Azure/azure-monitor-baseline-alerts/",
+      "alzCloudEnvironments": [
+        "AzureCloud"
+      ],
+      "_deployed_by_amba": true
+    },
+    "parameters": {
+      "ALZMonitorResourceGroupName": {
+        "type": "String",
+        "defaultValue": "rg-amba-monitoring-001",
+        "metadata": {
+          "displayName": "ALZ Monitor Resource Group Name",
+          "description": "Name of the resource group where the ALZ Monitor resources will be deployed"
+        }
+      },
+      "ALZMonitorResourceGroupTags": {
+        "type": "Object",
+        "defaultValue": {
+          "_deployed_by_alz_monitor": true
+        },
+        "metadata": {
+          "displayName": "ALZ Monitor Resource Group Tags",
+          "description": "Tags for the resource group where the ALZ Monitor resources will be deployed"
+        }
+      },
+      "ALZMonitorResourceGroupLocation": {
+        "type": "String",
+        "defaultValue": "centralus",
+        "metadata": {
+          "displayName": "ALZ Monitor Resource Group Location",
+          "description": "Location of the resource group where the ALZ Monitor resources will be deployed"
+        }
+      },
+      "ALZMonitorDisableTagName": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ALZ Monitoring disabled tag name",
+          "description": "Tag name used to disable monitoring at the resource level. Set to true if monitoring should be disabled."
+        },
+        "defaultValue": "MonitorDisable"
+      },
+      "ALZMonitorDisableTagValues": {
+        "type": "Array",
+        "metadata": {
+          "displayName": "ALZ Monitoring disabled tag values(s)",
+          "description": "Tag value(s) used to disable monitoring at the resource level. Set to true if monitoring should be disabled."
+        },
+        "defaultValue": [
+          "true",
+          "Test",
+          "Dev",
+          "Sandbox"
+        ]
+      },
+      "SqlDtuUsedAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "SqlDtuUsed Severity",
+          "description": "Severity of the SqlDtuUsed Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "SqlDtuUsedWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "SqlDtuUsed Window Size",
+          "description": "SqlDtuUsed Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "SqlDtuUsedEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "SqlDtuUsed Evaluation Frequency",
+          "description": "SqlDtuUsed Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "SqlDtuUsedAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "SqlDtuUsed Auto Mitigate",
+          "description": "Auto Mitigate for the SqlDtuUsed alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlDtuUsedAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "SqlDtuUsed Alert State",
+          "description": "Alert state for the SqlDtuUsed alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlDtuUsedThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "SqlDtuUsed Threshold",
+          "description": "Threshold for the SqlDtuUsed alert"
+        },
+        "defaultValue": "80"
+      },
+      "SqlDtuUsedPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "SqlDtuUsed Policy Effect",
+          "description": "Effect of the SqlDtuUsed policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "policyDefinitions": [
+        {
+          "policyDefinitionReferenceId": "ALZ_SqlDtuUsed",
+          "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/d26f4c8b-0461-4c57-b230-cbd1a5424db1",
+          "parameters": {
+            "severity": {
+              "value": "[[parameters('SqlDtuUsedAlertSeverity')]"
+            },
+            "windowSize": {
+              "value": "[[parameters('SqlDtuUsedWindowSize')]"
+            },
+            "evaluationFrequency": {
+              "value": "[[parameters('SqlDtuUsedEvaluationFrequency')]"
+            },
+            "effect": {
+              "value": "[[parameters('SqlDtuUsedPolicyEffect')]"
+            },
+            "autoMitigate": {
+              "value": "[[[parameters('SqlDtuUsedAutoMitigate')]"
+            },
+            "enabled": {
+              "value": "[[parameters('SqlDtuUsedAlertEnabled')]"
+            },
+            "threshold": {
+              "value": "[[parameters('SqlDtuUsedThreshold')]"
+            },
+            "MonitorDisableTagName": {
+              "value": "[[parameters('ALZMonitorDisableTagName')]"
+            },
+            "MonitorDisableTagValues": {
+              "value": "[[parameters('ALZMonitorDisableTagValues')]"
+            }
+          }
+        }
+      ],
+      "policyType": "Custom",
+      "policyDefinitionGroups": null
+    }
+  }

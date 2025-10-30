@@ -172,6 +172,17 @@
         "description": "Assign Storage initiative"
       }
     },
+    "enableAMBASql": {
+      "type": "string",
+      "defaultValue": "Yes",
+      "allowedValues": [
+        "Yes",
+        "No"
+      ],
+      "metadata": {
+        "description": "Assign Sql initiative"
+      }
+    },
     "enableAMBAVM": {
       "type": "string",
       "defaultValue": "Yes",
@@ -405,6 +416,9 @@
         "StorageAssignmentExcludedResources": {
           "value": []
         },
+        "SqlAssignmentExcludedResources": {
+          "value": []
+        },
         "vmAssignmentLandingZonesExcludedResources": {
           "value": []
         },
@@ -457,6 +471,10 @@
       "defaultValue": {}
     },
     "policyAssignmentParametersStorage": {
+      "type": "object",
+      "defaultValue": {}
+    },
+    "policyAssignmentParametersSql": {
       "type": "object",
       "defaultValue": {}
     },
@@ -601,6 +619,7 @@
     "policyAssignmentParametersNetworkChanges": "[union(variables('policyAssignmentParametersCommon'), parameters('policyAssignmentParametersNetworkChanges'))]",
     "policyAssignmentParametersRecoveryServices": "[union(variables('policyAssignmentParametersMonitorDisable'), parameters('policyAssignmentParametersRecoveryServices'))]",
     "policyAssignmentParametersStorage": "[union(variables('policyAssignmentParametersCommon'), parameters('policyAssignmentParametersStorage'))]",
+    "policyAssignmentParametersSql": "[union(variables('policyAssignmentParametersCommon'), parameters('policyAssignmentParametersSql'))]",
     "policyAssignmentParametersVM": "[union(variables('policyAssignmentParametersCommon'), parameters('policyAssignmentParametersVM'),variables('uamiParameters'))]",
     "policyAssignmentParametersWeb": "[union(variables('policyAssignmentParametersCommon'), parameters('policyAssignmentParametersWeb'), variables('uamiParameters'))]",
     // Declaring all required deployment uri's used for deployments of composite ARM templates for ESLZ
@@ -615,6 +634,7 @@
       "policyDefinitionsRecoveryServices": "[uri(deployment().properties.templateLink.uri, 'policyDefinitions/policies-RecoveryServices.json')]",
       "policyDefinitionsServiceHealth": "[uri(deployment().properties.templateLink.uri, 'policyDefinitions/policies-ServiceHealth.json')]",
       "policyDefinitionsStorage": "[uri(deployment().properties.templateLink.uri, 'policyDefinitions/policies-Storage.json')]",
+      "policyDefinitionsSql": "[uri(deployment().properties.templateLink.uri, 'policyDefinitions/policies-Sql.json')]",
       "policyDefinitionsWeb": "[uri(deployment().properties.templateLink.uri, 'policyDefinitions/policies-Web.json')]",
       "policySetDefinitions": "[uri(deployment().properties.templateLink.uri, 'policyDefinitions/policySets.json')]",
       "AMBAConnectivityInitiative": "[uri(deployment().properties.templateLink.uri, 'policyAssignments/DINE-ConnectivityAssignment.json')]",
@@ -631,6 +651,7 @@
       "AMBANetworkChangesInitiative": "[uri(deployment().properties.templateLink.uri, 'policyAssignments/DINE-NetworkChangesAssignment.json')]",
       "AMBARecoveryServicesInitiative": "[uri(deployment().properties.templateLink.uri, 'policyAssignments/DINE-RecoveryServicesAssignment.json')]",
       "AMBAStorageInitiative": "[uri(deployment().properties.templateLink.uri, 'policyAssignments/DINE-StorageAssignment.json')]",
+      "AMBASqlInitiative": "[uri(deployment().properties.templateLink.uri, 'policyAssignments/DINE-SqlAssignment.json')]",
       "AMBAVMInitiative": "[uri(deployment().properties.templateLink.uri, 'policyAssignments/DINE-VMAssignment.json')]",
       "AMBAWebInitiative": "[uri(deployment().properties.templateLink.uri, 'policyAssignments/DINE-WebAssignment.json')]"
     },
@@ -650,6 +671,7 @@
       "policyDefinitionsRecoveryServicesDeploymentName": "[take(concat('amba-Policy-RecoveryServices', variables('deploymentSuffix')), 64)]",
       "policyDefinitionsServiceHealthDeploymentName": "[take(concat('amba-Policy-ServiceHealth', variables('deploymentSuffix')), 64)]",
       "policyDefinitionsStorageDeploymentName": "[take(concat('amba-Policy-Storage', variables('deploymentSuffix')), 64)]",
+      "policyDefinitionsSqlDeploymentName": "[take(concat('amba-Policy-Sql', variables('deploymentSuffix')), 64)]",
       "policyDefinitionsWebDeploymentName": "[take(concat('amba-Policy-Web', variables('deploymentSuffix')), 64)]",
       "policySetDefinitionsDeploymentName": "[take(concat('amba-PolicySet', variables('deploymentSuffix')), 64)]",
       "AMBAConnectivityDeploymentName": "[take(concat('amba-Assignment-Connectivity', variables('deploymentSuffix')), 64)]",
@@ -665,6 +687,7 @@
       "AMBANetworkChangesDeploymentName": "[take(concat('amba-Assignment-NetworkChanges', variables('deploymentSuffix')), 64)]",
       "AMBARecoveryServicesDeploymentName": "[take(concat('amba-Assignment-RecoveryServices', variables('deploymentSuffix')), 64)]",
       "AMBAStorageDeploymentName": "[take(concat('amba-Assignment-Storage', variables('deploymentSuffix')), 64)]",
+      "AMBASqlDeploymentName": "[take(concat('amba-Assignment-Sql', variables('deploymentSuffix')), 64)]",
       "AMBAVMDeploymentNameLandingZones": "[take(concat('amba-Assignment-VM-LandingZones', variables('deploymentSuffix')), 64)]",
       "AMBAVMDeploymentNamePlatform": "[take(concat('amba-Assignment-VM-Platform', variables('deploymentSuffix')), 64)]",
       "AMBAWebDeploymentName": "[take(concat('amba-Assignment-Web', variables('deploymentSuffix')), 64)]",
@@ -681,6 +704,7 @@
       "pidCuaNetworkChangesDeploymentName": "[take(concat('amba-pid-NetworkChanges-', variables('cuaidNetworkChanges'), '-' , uniqueString(deployment().location, parameters('enterpriseScaleCompanyPrefix'), parameters('currentDateTimeUtcNow'))), 64)]",
       "pidCuaRecoveryServicesDeploymentName": "[take(concat('amba-pid-RecoveryServices-', variables('cuaidRecoveryServices'), '-' , uniqueString(deployment().location, parameters('enterpriseScaleCompanyPrefix'), parameters('currentDateTimeUtcNow'))), 64)]",
       "pidCuaStorageDeploymentName": "[take(concat('amba-pid-Storage-', variables('cuaidStorage'), '-' , uniqueString(deployment().location, parameters('enterpriseScaleCompanyPrefix'), parameters('currentDateTimeUtcNow'))), 64)]",
+      "pidCuaSqlDeploymentName": "[take(concat('amba-pid-Sql-', uniqueString(deployment().location, parameters('enterpriseScaleCompanyPrefix'), parameters('currentDateTimeUtcNow'))), 64)]",
       "pidCuaVMDeploymentName": "[take(concat('amba-pid-VM-', variables('cuaidVM'), '-' , uniqueString(deployment().location, parameters('enterpriseScaleCompanyPrefix'), parameters('currentDateTimeUtcNow'))), 64)]",
       "pidCuaWebDeploymentName": "[take(concat('amba-pid-Web-', variables('cuaidWeb'), '-' , uniqueString(deployment().location, parameters('enterpriseScaleCompanyPrefix'), parameters('currentDateTimeUtcNow'))), 64)]"
     },
@@ -1040,6 +1064,27 @@
         }
       }
     },
+    // Sql Policy Definitions
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2020-10-01",
+      "name": "[variables('deploymentNames').policyDefinitionsSqlDeploymentName]",
+      "location": "[deployment().location]",
+      "scope": "[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'))]",
+      "dependsOn": [],
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "contentVersion": "1.0.0.0",
+          "uri": "[variables('deploymentUris').policyDefinitionsSql]"
+        },
+        "parameters": {
+          "topLevelManagementGroupPrefix": {
+            "value": "[parameters('enterpriseScaleCompanyPrefix')]"
+          }
+        }
+      }
+    },
     // Web Policy Definitions
     {
       "type": "Microsoft.Resources/deployments",
@@ -1079,6 +1124,7 @@
         "[variables('deploymentNames').policyDefinitionsRecoveryServicesDeploymentName]",
         "[variables('deploymentNames').policyDefinitionsServiceHealthDeploymentName]",
         "[variables('deploymentNames').policyDefinitionsStorageDeploymentName]",
+        "[variables('deploymentNames').policyDefinitionsSqlDeploymentName]",
         "[variables('deploymentNames').policyDefinitionsWebDeploymentName]"
       ],
       "properties": {
@@ -1511,6 +1557,36 @@
           },
           "policyAssignmentExclusions": {
             "value": "[parameters('policyAssignmentExclusionList').storageAssignmentExcludedResources.value]"
+          }
+        }
+      }
+    },
+    // Assigning AMBA Sql PolicySet to the Landing Zone management group if condition is true
+    {
+      "condition": "[equals(parameters('enableAMBASql'), 'Yes')]",
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2020-10-01",
+      "name": "[variables('deploymentNames').AMBASqlDeploymentName]",
+      "scope": "[concat('Microsoft.Management/managementGroups/', parameters('LandingZoneManagementGroup'))]",
+      "dependsOn": [
+        "[variables('deploymentNames').policySetDefinitionsDeploymentName]"
+      ],
+      "location": "[deployment().location]",
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "contentVersion": "1.0.0.0",
+          "uri": "[variables('deploymentUris').AMBASqlInitiative]"
+        },
+        "parameters": {
+          "topLevelManagementGroupPrefix": {
+            "value": "[parameters('enterpriseScaleCompanyPrefix')]"
+          },
+          "policyAssignmentParameters": {
+            "value": "[variables('policyAssignmentParametersSql')]"
+          },
+          "policyAssignmentExclusions": {
+            "value": "[parameters('policyAssignmentExclusionList').sqlAssignmentExcludedResources.value]"
           }
         }
       }
