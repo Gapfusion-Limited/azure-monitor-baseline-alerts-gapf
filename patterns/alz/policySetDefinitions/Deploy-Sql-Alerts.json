@@ -173,7 +173,7 @@
             "value": "[[parameters('SqlDtuUsedPolicyEffect')]"
           },
           "autoMitigate": {
-            "value": "[[[parameters('SqlDtuUsedAutoMitigate')]"
+            "value": "[[parameters('SqlDtuUsedAutoMitigate')]"
           },
           "enabled": {
             "value": "[[parameters('SqlDtuUsedAlertEnabled')]"
