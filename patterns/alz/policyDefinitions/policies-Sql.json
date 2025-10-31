@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.38.33.27573",
-      "templateHash": "14795479803857408056"
+      "templateHash": "10293984533547366483"
     }
   },
   "parameters": {
@@ -265,7 +265,7 @@
                 "value": "[[[parameters('SqlDtuUsedPolicyEffect')]"
               },
               "autoMitigate": {
-                "value": "[[[[parameters('SqlDtuUsedAutoMitigate')]"
+                "value": "[[[parameters('SqlDtuUsedAutoMitigate')]"
               },
               "enabled": {
                 "value": "[[[parameters('SqlDtuUsedAlertEnabled')]"
