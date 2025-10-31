@@ -69,7 +69,8 @@ var loadPolicyDefinitions = {
   All: [
     // Used in both Sql and Management Policy Set Definitions
     loadTextContent('../../../services/Sql/servers/Deploy-SQL-Databases-DTUUsed-Alert.json')
-    loadTextContent('../../../services/Sql/servers/Deploy-SQL-Databases-DataSpaceUsedPercent.json')
+    loadTextContent('../../../services/Sql/servers/Deploy-SQL-Databases-DataSpaceUsedPercent-Alert.json')
+    loadTextContent('../../../services/Sql/servers/Deploy-SQL-Databases-Deadlock-Alert.json')
   ]
   AzureCloud: []
   AzureChinaCloud: []

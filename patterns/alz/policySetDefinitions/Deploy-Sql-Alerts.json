@@ -245,6 +245,98 @@
           "disabled"
         ],
         "defaultValue": "deployIfNotExists"
+      },
+      "SqlDeadlockAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Severity",
+          "description": "Severity of the SqlDeadlock Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "SqlDeadlockWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Window Size",
+          "description": "Window size for the SqlDeadlock alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "SqlDeadlockEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Evaluation Frequency",
+          "description": "Evaluation frequency for the SqlDeadlock alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "SqlDeadlockAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Auto Mitigate",
+          "description": "Auto Mitigate for the SqlDeadlock alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlDeadlockAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Alert State",
+          "description": "Alert state for the SqlDeadlock alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlDeadlockThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Threshold",
+          "description": "Threshold for the alert"
+        },
+        "defaultValue": "1"
+      },
+      "SqlDeadlockPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Effect of the SqlDeadlock policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
       }
     },
     "policyDefinitions": [
@@ -305,6 +397,39 @@
           },
           "threshold": {
             "value": "[[parameters('SqlDataSpaceUsedThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_SqlDeadlock",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/ce44fc81-3610-4165-a107-9dd4b8ab3972",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('SqlDeadlockAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('SqlDeadlockWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('SqlDeadlockEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('SqlDeadlockPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('SqlDeadlockAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('SqlDeadlockAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('SqlDeadlockThreshold')]"
           },
           "MonitorDisableTagName": {
             "value": "[[parameters('ALZMonitorDisableTagName')]"
