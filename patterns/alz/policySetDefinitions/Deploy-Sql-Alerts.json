@@ -153,6 +153,98 @@
           "disabled"
         ],
         "defaultValue": "deployIfNotExists"
+      },
+      "SqlDataSpaceUsedAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Severity",
+          "description": "Severity of the SqlDataSpaceUsed Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "SqlDataSpaceUsedWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Window Size",
+          "description": "Window size for the SqlDataSpaceUsed alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "SqlDataSpaceUsedEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Evaluation Frequency",
+          "description": "Evaluation frequency for the SqlDataSpaceUsed alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "SqlDataSpaceUsedAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Auto Mitigate",
+          "description": "Auto Mitigate for the SqlDataSpaceUsed alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlDataSpaceUsedAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Alert State",
+          "description": "Alert state for the SqlDataSpaceUsed alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlDataSpaceUsedThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Threshold",
+          "description": "Threshold for the SqlDataSpaceUsed alert"
+        },
+        "defaultValue": "80"
+      },
+      "SqlDataSpaceUsedPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Effect of the SqlDataSpaceUsed policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
       }
     },
     "policyDefinitions": [
@@ -180,6 +272,39 @@
           },
           "threshold": {
             "value": "[[parameters('SqlDtuUsedThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_SqlDataSpaceUsed",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/86922a27-41bb-4834-bc54-0b602b275597",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('SqlDataSpaceUsedAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('SqlDataSpaceUsedWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('SqlDataSpaceUsedEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('SqlDataSpaceUsedPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('SqlDataSpaceUsedAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('SqlDataSpaceUsedAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('SqlDataSpaceUsedThreshold')]"
           },
           "MonitorDisableTagName": {
             "value": "[[parameters('ALZMonitorDisableTagName')]"

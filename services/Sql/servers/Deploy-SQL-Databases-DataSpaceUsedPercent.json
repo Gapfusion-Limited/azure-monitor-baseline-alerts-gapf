@@ -1,12 +1,12 @@
 {
   "type": "Microsoft.Authorization/policyDefinitions",
   "apiVersion": "2021-06-01",
-  "name": "d26f4c8b-0461-4c57-b230-cbd1a5424db1",
+  "name": "86922a27-41bb-4834-bc54-0b602b275597",
   "properties": {
     "policyType": "Custom",
     "mode": "All",
-    "displayName": "Deploy Sql servers databases dtu_used Alert",
-    "description": "Policy to Audit/Deploy Sql servers databases dtu_used Alert",
+    "displayName": "Deploy Sql servers databases storage percentage used Alert",
+    "description": "Policy to Audit/Deploy Sql servers databases storage percentage used Alert",
     "metadata": {
       "version": "1.0.0-preview",
       "category": "Sql",
@@ -141,7 +141,7 @@
           },
           {
             "field": "Microsoft.Sql/servers/databases/sku.tier",
-            "in": [ "Basic", "Standard", "Premium" ]
+            "in": ["Basic","Standard","Premium","GeneralPurpose","BusinessCritical","Hyperscale"]
           },
           {
             "field": "[[concat('tags[', parameters('MonitorDisableTagName'), ']')]",
@@ -156,7 +156,7 @@
             "/providers/Microsoft.Authorization/roleDefinitions/47be4a87-7950-4631-9daf-b664a405f074"
           ],
           "type": "Microsoft.Insights/metricAlerts",
-          "name": "[[concat(replace(field('fullName'),'/','-'), '-dtu_used')]",
+          "name": "[[concat(replace(field('fullName'),'/','-'), '-storage-percent')]",
           "existenceCondition": {
             "allOf": [
               {
@@ -165,7 +165,7 @@
               },
               {
                 "field": "Microsoft.Insights/metricAlerts/criteria.Microsoft.Azure.Monitor.MultipleResourceMultipleMetricCriteria.allOf[*].metricName",
-                "equals": "dtu_used"
+                "equals": "storage_percent"
               },
               {
                 "field": "Microsoft.Insights/metricalerts/scopes[*]",
@@ -201,7 +201,7 @@
               },
               {
                 "field": "Microsoft.Insights/metricAlerts/criteria.Microsoft.Azure.Monitor.MultipleResourceMultipleMetricCriteria.allOf[*].StaticThresholdCriterion.threshold",
-                "equals": "[[if(contains(field('tags'), '_amba-dtu_used-threshold-Override_'), field('tags._amba-dtu_used-threshold-Override_'), parameters('threshold'))]"
+                "equals": "[[if(contains(field('tags'), '_amba-storage-percentage-threshold-Override_'), field('tags._amba-storage-percentage-threshold-Override_'), parameters('threshold'))]"
               }
             ]
           },
@@ -250,13 +250,13 @@
                   {
                     "type": "Microsoft.Insights/metricAlerts",
                     "apiVersion": "2018-03-01",
-                    "name": "[[concat(parameters('resourceName'), '-dtu_used')]",
+                    "name": "[[concat(parameters('resourceName'), '-storage-percentage')]",
                     "location": "global",
                     "tags": {
                       "_deployed_by_amba": true
                     },
                     "properties": {
-                      "description": "Metric Alert for Sql servers databases dtu_used",
+                      "description": "Metric Alert for Sql servers databases storage percentage used",
                       "severity": "[[parameters('severity')]",
                       "enabled": "[[parameters('enabled')]",
                       "scopes": [
@@ -267,9 +267,9 @@
                       "criteria": {
                         "allOf": [
                           {
-                            "name": "dtu_used",
+                            "name": "storage_percent",
                             "metricNamespace": "Microsoft.Sql/servers/databases",
-                            "metricName": "dtu_used",
+                            "metricName": "storage_percent",
                             "operator": "GreaterThan",
                             "threshold": "[[parameters('threshold')]",
                             "timeAggregation": "Average",
@@ -326,7 +326,7 @@
                   "value": "[[parameters('enabled')]"
                 },
                 "threshold": {
-                  "value": "[[if(contains(field('tags'), '_amba-dtu_used-threshold-Override_'), field('tags._amba-dtu_used-threshold-Override_'), parameters('threshold'))]"
+                  "value": "[[if(contains(field('tags'), '_amba-storage-percentage-threshold-Override_'), field('tags._amba-storage-percentage-threshold-Override_'), parameters('threshold'))]"
                 }
               }
             }
