@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.38.33.27573",
-      "templateHash": "11925283120167576531"
+      "templateHash": "8024730576242610182"
     }
   },
   "parameters": {
@@ -134,32 +134,6 @@
           "_deployed_by_amba": true
         },
         "parameters": {
-          "ALZMonitorResourceGroupName": {
-            "type": "String",
-            "defaultValue": "rg-amba-monitoring-001",
-            "metadata": {
-              "displayName": "ALZ Monitor Resource Group Name",
-              "description": "Name of the resource group where the ALZ Monitor resources will be deployed"
-            }
-          },
-          "ALZMonitorResourceGroupTags": {
-            "type": "Object",
-            "defaultValue": {
-              "_deployed_by_alz_monitor": true
-            },
-            "metadata": {
-              "displayName": "ALZ Monitor Resource Group Tags",
-              "description": "Tags for the resource group where the ALZ Monitor resources will be deployed"
-            }
-          },
-          "ALZMonitorResourceGroupLocation": {
-            "type": "String",
-            "defaultValue": "centralus",
-            "metadata": {
-              "displayName": "ALZ Monitor Resource Group Location",
-              "description": "Location of the resource group where the ALZ Monitor resources will be deployed"
-            }
-          },
           "ALZMonitorDisableTagName": {
             "type": "String",
             "metadata": {
