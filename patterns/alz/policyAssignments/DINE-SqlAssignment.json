@@ -35,8 +35,8 @@
     },
     "policyAssignmentNames": {
       "ambaSql": "Deploy-AMBA-Sql",
-      "description": "This initiative deploys Azure Monitor Baseline Alerts (AMBA-ALZ) to monitor Sql Services such as Sql databases, Elastic Pools, Managed Instances.",
-      "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) for Sql"
+      "description": "This initiative deploys Azure Monitor Baseline Alerts (AMBA-ALZ) to monitor SQL Services such as SQL databases, Elastic Pools, Managed Instances.",
+      "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) for SQL"
     },
     "nonComplianceMessage": {
       "message": "Alerting {enforcementMode} be deployed to Azure services.",

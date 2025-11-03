@@ -429,6 +429,558 @@
           "disabled"
         ],
         "defaultValue": "deployIfNotExists"
+      },
+      "SqlElasticCpuPercentAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Severity",
+          "description": "Severity of the SqlElasticCpuPercent Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "SqlElasticCpuPercentWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Window Size",
+          "description": "Window size for the SqlElasticCpuPercent alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "SqlElasticCpuPercentEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Evaluation Frequency",
+          "description": "Evaluation frequency for the SqlElasticCpuPercent alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "SqlElasticCpuPercentAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Auto Mitigate",
+          "description": "Auto Mitigate for the SqlElasticCpuPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlElasticCpuPercentAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Alert State",
+          "description": "Alert state for the SqlElasticCpuPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlElasticCpuPercentThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Threshold",
+          "description": "Threshold for the SqlElasticCpuPercent alert"
+        },
+        "defaultValue": "90"
+      },
+      "SqlElasticCpuPercentPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Effect of the SqlElasticCpuPercent policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "SqlElasticDtuConsumptionPercentAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Severity",
+          "description": "Severity of the SqlElasticDtuConsumptionPercent Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "SqlElasticDtuConsumptionPercentWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Window Size",
+          "description": "Window size for the SqlElasticDtuConsumptionPercent alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "SqlElasticDtuConsumptionPercentEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Evaluation Frequency",
+          "description": "Evaluation frequency for the SqlElasticDtuConsumptionPercent alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "SqlElasticDtuConsumptionPercentAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Auto Mitigate",
+          "description": "Auto Mitigate for the SqlElasticDtuConsumptionPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlElasticDtuConsumptionPercentAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Alert State",
+          "description": "Alert state for the SqlElasticDtuConsumptionPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlElasticDtuConsumptionPercentThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Threshold",
+          "description": "Threshold for the SqlElasticDtuConsumptionPercent alert"
+        },
+        "defaultValue": "90"
+      },
+      "SqlElasticDtuConsumptionPercentPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Effect of the SqlElasticDtuConsumptionPercent policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "SqlElasticeDtuUsedAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Severity",
+          "description": "Severity of the SqlElasticeDtuUsed Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "SqlElasticeDtuUsedWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Window Size",
+          "description": "Window size for the SqlElasticeDtuUsed alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "SqlElasticeDtuUsedEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Evaluation Frequency",
+          "description": "Evaluation frequency for the SqlElasticeDtuUsed alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "SqlElasticeDtuUsedAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Auto Mitigate",
+          "description": "Auto Mitigate for the SqlElasticeDtuUsed alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlElasticeDtuUsedAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Alert State",
+          "description": "Alert state for the SqlElasticeDtuUsed alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlElasticeDtuUsedThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Threshold",
+          "description": "Threshold for the SqlElasticeDtuUsed alert"
+        },
+        "defaultValue": "80"
+      },
+      "SqlElasticeDtuUsedPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Effect of the SqlElasticeDtuUsed policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "SqlElasticStoragePercentAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Severity",
+          "description": "Severity of the SqlElasticStoragePercent Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "SqlElasticStoragePercentWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Window Size",
+          "description": "Window size for the SqlElasticStoragePercent alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "SqlElasticStoragePercentEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Evaluation Frequency",
+          "description": "Evaluation frequency for the SqlElasticStoragePercent alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "SqlElasticStoragePercentAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Auto Mitigate",
+          "description": "Auto Mitigate for the SqlElasticStoragePercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlElasticStoragePercentAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Alert State",
+          "description": "Alert state for the SqlElasticStoragePercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlElasticStoragePercentThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Threshold",
+          "description": "Threshold for the SqlElasticStoragePercent alert"
+        },
+        "defaultValue": "90"
+      },
+      "SqlElasticStoragePercentPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Effect of the SqlElasticStoragePercent policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "SqlElasticTempDbLogUsedPercentAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Severity",
+          "description": "Severity of the SqlElasticTempDbLogUsedPercent Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "SqlElasticTempDbLogUsedPercentWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Window Size",
+          "description": "Window size for the SqlElasticTempDbLogUsedPercent alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "SqlElasticTempDbLogUsedPercentEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Evaluation Frequency",
+          "description": "Evaluation frequency for the SqlElasticTempDbLogUsedPercent alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "SqlElasticTempDbLogUsedPercentAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Auto Mitigate",
+          "description": "Auto Mitigate for the SqlElasticTempDbLogUsedPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlElasticTempDbLogUsedPercentAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Alert State",
+          "description": "Alert state for the SqlElasticTempDbLogUsedPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlElasticTempDbLogUsedPercentThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Threshold",
+          "description": "Threshold for the SqlElasticTempDbLogUsedPercent alert"
+        },
+        "defaultValue": "80"
+      },
+      "SqlElasticTempDbLogUsedPercentPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Effect of the SqlElasticTempDbLogUsedPercent policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "SqlElasticWorkersPercentAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Severity",
+          "description": "Severity of the SqlElasticWorkersPercent Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "SqlElasticWorkersPercentWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Window Size",
+          "description": "Window size for the SqlElasticWorkersPercent alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "SqlElasticWorkersPercentEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Evaluation Frequency",
+          "description": "Evaluation frequency for the SqlElasticWorkersPercent alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "SqlElasticWorkersPercentAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Auto Mitigate",
+          "description": "Auto Mitigate for the SqlElasticWorkersPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlElasticWorkersPercentAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Alert State",
+          "description": "Alert state for the SqlElasticWorkersPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlElasticWorkersPercentThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Threshold",
+          "description": "Threshold for the SqlElasticWorkersPercent alert"
+        },
+        "defaultValue": "90"
+      },
+      "SqlElasticWorkersPercentPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Effect of the SqlElasticWorkersPercent policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
       }
     },
     "policyDefinitions": [
@@ -555,6 +1107,204 @@
           },
           "threshold": {
             "value": "[[parameters('SqlDtuConsumptionPercentThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_SqlElasticCpuPercent",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/805c4ae5-a852-43bd-ad1c-0f7f381d8f32",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('SqlElasticCpuPercentAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('SqlElasticCpuPercentWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('SqlElasticCpuPercentEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('SqlElasticCpuPercentPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('SqlElasticCpuPercentAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('SqlElasticCpuPercentAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('SqlElasticCpuPercentThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_SqlElasticDtuConsumptionPercent",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/5d9075b5-3c19-4cf6-9c2e-50ba4c175691",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('SqlElasticDtuConsumptionPercentAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('SqlElasticDtuConsumptionPercentWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('SqlElasticDtuConsumptionPercentEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('SqlElasticDtuConsumptionPercentPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('SqlElasticDtuConsumptionPercentAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('SqlElasticDtuConsumptionPercentAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('SqlElasticDtuConsumptionPercentThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_SqlElasticeDtuUsed",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/16a64053-1905-4d8e-8198-810584cad108",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('SqlElasticeDtuUsedAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('SqlElasticeDtuUsedWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('SqlElasticeDtuUsedEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('SqlElasticeDtuUsedPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('SqlElasticeDtuUsedAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('SqlElasticeDtuUsedAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('SqlElasticeDtuUsedThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_SqlElasticStoragePercent",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/88f3cbc0-bcfb-482f-b6f4-709a335afcad",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('SqlElasticStoragePercentAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('SqlElasticStoragePercentWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('SqlElasticStoragePercentEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('SqlElasticStoragePercentPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('SqlElasticStoragePercentAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('SqlElasticStoragePercentAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('SqlElasticStoragePercentThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_SqlElasticTempDbLogUsedPercent",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/af66de51-079c-4d34-af92-f52f887642dc",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('SqlElasticTempDbLogUsedPercentAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('SqlElasticTempDbLogUsedPercentWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('SqlElasticTempDbLogUsedPercentEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('SqlElasticTempDbLogUsedPercentPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('SqlElasticTempDbLogUsedPercentAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('SqlElasticTempDbLogUsedPercentAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('SqlElasticTempDbLogUsedPercentThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_SqlElasticWorkersPercent",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/1b37038e-6e5c-4463-97d4-8a632251d70e",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('SqlElasticWorkersPercentAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('SqlElasticWorkersPercentWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('SqlElasticWorkersPercentEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('SqlElasticWorkersPercentPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('SqlElasticWorkersPercentAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('SqlElasticWorkersPercentAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('SqlElasticWorkersPercentThreshold')]"
           },
           "MonitorDisableTagName": {
             "value": "[[parameters('ALZMonitorDisableTagName')]"

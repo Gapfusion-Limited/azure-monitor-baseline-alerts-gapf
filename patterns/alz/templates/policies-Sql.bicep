@@ -73,7 +73,13 @@ var loadPolicyDefinitions = {
     loadTextContent('../../../services/Sql/servers/Deploy-SQL-Databases-DTUUsed-Alert.json')
     loadTextContent('../../../services/Sql/servers/Deploy-SQL-Databases-DataSpaceUsedPercent-Alert.json')
     loadTextContent('../../../services/Sql/servers/Deploy-SQL-Databases-Deadlock-Alert.json')
-    loadTextContent('../../../services/Sql/servers/Deploy-SQL-DTUConsumptionPercent-Alert.json')
+    loadTextContent('../../../services/Sql/servers/Deploy-SQL-Databases-DTUConsumptionPercent-Alert.json')
+    loadTextContent('../../../services/Sql/servers/Deploy-SQL-ElasticPools-CPUPercent-Alert.json')
+    loadTextContent('../../../services/Sql/servers/Deploy-SQL-ElasticPools-DTUConsumptionPercent-Alert.json')
+    loadTextContent('../../../services/Sql/servers/Deploy-SQL-ElasticPools-eDTUUsed-Alert.json')
+    loadTextContent('../../../services/Sql/servers/Deploy-SQL-ElasticPools-StoragePercent-Alert.json')
+    loadTextContent('../../../services/Sql/servers/Deploy-SQL-ElasticPools-TempdbLogUsedPercent-Alert.json')
+    loadTextContent('../../../services/Sql/servers/Deploy-SQL-ElasticPools-WorkersPercent-Alert.json')
   ]
   AzureCloud: []
   AzureChinaCloud: []
