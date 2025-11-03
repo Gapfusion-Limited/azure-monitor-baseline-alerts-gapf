@@ -5,7 +5,7 @@
   "properties": {
     "policyType": "Custom",
     "mode": "All",
-    "displayName": "Deploy Sql servers elasticpools workers_percent Alert",
+    "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) - SQL servers elasticpools workers_percent Alert",
     "description": "Policy to Audit/Deploy Sql servers elasticpools workers_percent Alert",
     "metadata": {
       "version": "1.0.0-preview",

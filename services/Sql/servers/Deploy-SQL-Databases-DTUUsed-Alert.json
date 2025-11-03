@@ -5,7 +5,7 @@
   "properties": {
     "policyType": "Custom",
     "mode": "All",
-    "displayName": "Deploy Sql servers databases dtu_used Alert",
+    "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) - SQL servers databases dtu_used Alert",
     "description": "Policy to Audit/Deploy Sql servers databases dtu_used Alert",
     "metadata": {
       "version": "1.0.0-preview",
