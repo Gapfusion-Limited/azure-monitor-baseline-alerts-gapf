@@ -5,8 +5,8 @@
   "properties": {
     "policyType": "Custom",
     "mode": "All",
-    "displayName": "Deploy Sql servers databases storage percentage used Alert",
-    "description": "Policy to Audit/Deploy Sql servers databases storage percentage used Alert",
+    "displayName": "Deploy Sql servers databases storage percent used Alert",
+    "description": "Policy to Audit/Deploy Sql servers databases storage percent used Alert",
     "metadata": {
       "version": "1.0.0-preview",
       "category": "Sql",
@@ -163,7 +163,7 @@
             "/providers/Microsoft.Authorization/roleDefinitions/47be4a87-7950-4631-9daf-b664a405f074"
           ],
           "type": "Microsoft.Insights/metricAlerts",
-          "name": "[[concat(replace(field('fullName'),'/','-'), '-storage-percent')]",
+          "name": "[[concat(replace(field('fullName'),'/','-'), '-storage_percent')]",
           "existenceCondition": {
             "allOf": [
               {
@@ -208,7 +208,7 @@
               },
               {
                 "field": "Microsoft.Insights/metricAlerts/criteria.Microsoft.Azure.Monitor.MultipleResourceMultipleMetricCriteria.allOf[*].StaticThresholdCriterion.threshold",
-                "equals": "[[if(contains(field('tags'), '_amba-storage-percentage-threshold-Override_'), field('tags._amba-storage-percentage-threshold-Override_'), parameters('threshold'))]"
+                "equals": "[[if(contains(field('tags'), '_amba-storage_percent-threshold-Override_'), field('tags._amba-storage_percent-threshold-Override_'), parameters('threshold'))]"
               }
             ]
           },
@@ -257,13 +257,13 @@
                   {
                     "type": "Microsoft.Insights/metricAlerts",
                     "apiVersion": "2018-03-01",
-                    "name": "[[concat(parameters('resourceName'), '-storage-percentage')]",
+                    "name": "[[concat(parameters('resourceName'), '-storage_percent')]",
                     "location": "global",
                     "tags": {
                       "_deployed_by_amba": true
                     },
                     "properties": {
-                      "description": "Metric Alert for Sql servers databases storage percentage used",
+                      "description": "Metric Alert for Sql servers databases storage percent used",
                       "severity": "[[parameters('severity')]",
                       "enabled": "[[parameters('enabled')]",
                       "scopes": [
@@ -333,7 +333,7 @@
                   "value": "[[parameters('enabled')]"
                 },
                 "threshold": {
-                  "value": "[[if(contains(field('tags'), '_amba-storage-percentage-threshold-Override_'), field('tags._amba-storage-percentage-threshold-Override_'), parameters('threshold'))]"
+                  "value": "[[if(contains(field('tags'), '_amba-storage_percent-threshold-Override_'), field('tags._amba-storage_percent-threshold-Override_'), parameters('threshold'))]"
                 }
               }
             }
