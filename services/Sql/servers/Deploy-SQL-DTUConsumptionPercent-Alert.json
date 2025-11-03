@@ -142,6 +142,9 @@
           {
             "field": "Microsoft.Sql/servers/databases/sku.tier",
             "in": [
+              "Basic",
+              "Standard",
+              "Premium",
               "GeneralPurpose",
               "BusinessCritical",
               "Hyperscale"

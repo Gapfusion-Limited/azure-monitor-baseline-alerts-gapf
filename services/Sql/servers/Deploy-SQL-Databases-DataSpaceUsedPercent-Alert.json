@@ -141,7 +141,14 @@
           },
           {
             "field": "Microsoft.Sql/servers/databases/sku.tier",
-            "in": ["Basic","Standard","Premium","GeneralPurpose","BusinessCritical","Hyperscale"]
+            "in": [
+              "Basic",
+              "Standard",
+              "Premium",
+              "GeneralPurpose",
+              "BusinessCritical",
+              "Hyperscale"
+            ]
           },
           {
             "field": "[[concat('tags[', parameters('MonitorDisableTagName'), ']')]",
