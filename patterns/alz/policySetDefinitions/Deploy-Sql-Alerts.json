@@ -337,6 +337,98 @@
           "disabled"
         ],
         "defaultValue": "deployIfNotExists"
+      },
+      "SqlDtuConsumptionPercentAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Severity",
+          "description": "Severity of the SqlDtuConsumptionPercent Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "SqlDtuConsumptionPercentWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Window Size",
+          "description": "Window size for the SqlDtuConsumptionPercent alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "SqlDtuConsumptionPercentEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Evaluation Frequency",
+          "description": "Evaluation frequency for the SqlDtuConsumptionPercent alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "SqlDtuConsumptionPercentAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Auto Mitigate",
+          "description": "Auto Mitigate for the SqlDtuConsumptionPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlDtuConsumptionPercentAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Alert State",
+          "description": "Alert state for the SqlDtuConsumptionPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "SqlDtuConsumptionPercentThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Threshold",
+          "description": "Threshold for the SqlDtuConsumptionPercent alert"
+        },
+        "defaultValue": "80"
+      },
+      "SqlDtuConsumptionPercentPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Effect of the SqlDtuConsumptionPercent policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
       }
     },
     "policyDefinitions": [
@@ -430,6 +522,39 @@
           },
           "threshold": {
             "value": "[[parameters('SqlDeadlockThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_SqlDtuConsumptionPercent",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/ed2dc2fc-f133-43dd-adf8-233df95d5197",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('SqlDtuConsumptionPercentAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('SqlDtuConsumptionPercentWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('SqlDtuConsumptionPercentEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('SqlDtuConsumptionPercentPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('SqlDtuConsumptionPercentAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('SqlDtuConsumptionPercentAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('SqlDtuConsumptionPercentThreshold')]"
           },
           "MonitorDisableTagName": {
             "value": "[[parameters('ALZMonitorDisableTagName')]"
