@@ -1,0 +1,1670 @@
+{
+  "type": "Microsoft.Authorization/policySetDefinitions",
+  "apiVersion": "2021-06-01",
+  "name": "Alerting-IntegrationServices",
+  "properties": {
+    "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) for Integration Services",
+    "description": "This initiative deploys Azure Monitor Baseline Alerts (AMBA-ALZ) to monitor Integration Services such as API Management (APIM), Cognitive Services (Azure AI), Container Instances, Data Factory, EventGrid, EventHub, Logic Apps, Machine Learning, Service Bus.",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "Monitoring",
+      "source": "https://github.com/Azure/azure-monitor-baseline-alerts/",
+      "alzCloudEnvironments": [
+        "AzureCloud"
+      ],
+      "_deployed_by_amba": true
+    },
+    "parameters": {
+      "ALZMonitorDisableTagName": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ALZ Monitoring disabled tag name",
+          "description": "Tag name used to disable monitoring at the resource level. Set to true if monitoring should be disabled."
+        },
+        "defaultValue": "MonitorDisable"
+      },
+      "ALZMonitorDisableTagValues": {
+        "type": "Array",
+        "metadata": {
+          "displayName": "ALZ Monitoring disabled tag values(s)",
+          "description": "Tag value(s) used to disable monitoring at the resource level. Set to true if monitoring should be disabled."
+        },
+        "defaultValue": [
+          "true",
+          "Test",
+          "Dev",
+          "Sandbox"
+        ]
+      },
+      "ApimBackendDurationAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimBackendDuration Severity",
+          "description": "Severity of the ApimBackendDuration Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "ApimBackendDurationWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimBackendDuration Window Size",
+          "description": "ApimBackendDuration Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ApimBackendDurationEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimBackendDuration Evaluation Frequency",
+          "description": "ApimBackendDuration Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "ApimBackendDurationAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimBackendDuration Auto Mitigate",
+          "description": "Auto Mitigate for the ApimBackendDuration alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ApimBackendDurationAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimBackendDuration Alert State",
+          "description": "Alert state for the ApimBackendDuration alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ApimBackendDurationThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimBackendDuration Threshold",
+          "description": "Threshold for the ApimBackendDuration alert"
+        },
+        "defaultValue": "10000"
+      },
+      "ApimBackendDurationPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimBackendDuration Policy Effect",
+          "description": "Effect of the ApimBackendDuration policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "ApimDurationAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimDuration Severity",
+          "description": "Severity of the ApimDuration Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "ApimDurationWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimDuration Window Size",
+          "description": "ApimDuration Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ApimDurationEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimDuration Evaluation Frequency",
+          "description": "ApimDuration Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "ApimDurationAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimDuration Auto Mitigate",
+          "description": "Auto Mitigate for the ApimDuration alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ApimDurationAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimDuration Alert State",
+          "description": "Alert state for the ApimDuration alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ApimDurationThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimDuration Threshold",
+          "description": "Threshold for the ApimDuration alert"
+        },
+        "defaultValue": "10000"
+      },
+      "ApimDurationPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimDuration Policy Effect",
+          "description": "Effect of the ApimDuration policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "ApimFailedRequestsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimFailedRequests Severity",
+          "description": "Severity of the ApimFailedRequests Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "ApimFailedRequestsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimFailedRequests Window Size",
+          "description": "ApimFailedRequests Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ApimFailedRequestsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimFailedRequests Evaluation Frequency",
+          "description": "ApimFailedRequests Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "ApimFailedRequestsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimFailedRequests Auto Mitigate",
+          "description": "Auto Mitigate for the ApimFailedRequests alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ApimFailedRequestsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimFailedRequests Alert State",
+          "description": "Alert state for the ApimFailedRequests alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ApimFailedRequestsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimFailedRequests Threshold",
+          "description": "Threshold for the ApimFailedRequests alert"
+        },
+        "defaultValue": "1"
+      },
+      "ApimFailedRequestsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimFailedRequests Policy Effect",
+          "description": "Effect of the ApimFailedRequests policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "ApimUnauthorizedRequestsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimUnauthorizedRequests Severity",
+          "description": "Severity of the ApimUnauthorizedRequests Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "ApimUnauthorizedRequestsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimUnauthorizedRequests Window Size",
+          "description": "ApimUnauthorizedRequests Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ApimUnauthorizedRequestsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimUnauthorizedRequests Evaluation Frequency",
+          "description": "ApimUnauthorizedRequests Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "ApimUnauthorizedRequestsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimUnauthorizedRequests Auto Mitigate",
+          "description": "Auto Mitigate for the ApimUnauthorizedRequests alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ApimUnauthorizedRequestsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimUnauthorizedRequests Alert State",
+          "description": "Alert state for the ApimUnauthorizedRequests alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ApimUnauthorizedRequestsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimUnauthorizedRequests Threshold",
+          "description": "Threshold for the ApimUnauthorizedRequests alert"
+        },
+        "defaultValue": "1"
+      },
+      "ApimUnauthorizedRequestsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ApimUnauthorizedRequests Policy Effect",
+          "description": "Effect of the ApimUnauthorizedRequests policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "CogSvcsOpenAIProvUtilizationAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsOpenAIProvUtilization Severity",
+          "description": "Severity of the CogSvcsOpenAIProvUtilization Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "CogSvcsOpenAIProvUtilizationWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsOpenAIProvUtilization Window Size",
+          "description": "CogSvcsOpenAIProvUtilization Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "CogSvcsOpenAIProvUtilizationEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsOpenAIProvUtilization Evaluation Frequency",
+          "description": "CogSvcsOpenAIProvUtilization Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "CogSvcsOpenAIProvUtilizationAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsOpenAIProvUtilization Auto Mitigate",
+          "description": "Auto Mitigate for the CogSvcsOpenAIProvUtilization alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsOpenAIProvUtilizationAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsOpenAIProvUtilization Alert State",
+          "description": "Alert state for the CogSvcsOpenAIProvUtilization alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsOpenAIProvUtilizationThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsOpenAIProvUtilization Threshold",
+          "description": "Threshold for the CogSvcsOpenAIProvUtilization alert"
+        },
+        "defaultValue": "80"
+      },
+      "CogSvcsOpenAIProvUtilizationPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsOpenAIProvUtilization Policy Effect",
+          "description": "Effect of the CogSvcsOpenAIProvUtilization policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "CogSvcsOpenAITimeToResponseAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsOpenAITimeToResponse Severity",
+          "description": "Severity of the CogSvcsOpenAITimeToResponse Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "CogSvcsOpenAITimeToResponseWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsOpenAITimeToResponse Window Size",
+          "description": "CogSvcsOpenAITimeToResponse Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "CogSvcsOpenAITimeToResponseEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsOpenAITimeToResponse Evaluation Frequency",
+          "description": "CogSvcsOpenAITimeToResponse Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "CogSvcsOpenAITimeToResponseAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsOpenAITimeToResponse Auto Mitigate",
+          "description": "Auto Mitigate for the CogSvcsOpenAITimeToResponse alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsOpenAITimeToResponseAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsOpenAITimeToResponse Alert State",
+          "description": "Alert state for the CogSvcsOpenAITimeToResponse alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsOpenAITimeToResponseThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsOpenAITimeToResponse Threshold",
+          "description": "Threshold for the CogSvcsOpenAITimeToResponse alert"
+        },
+        "defaultValue": "200"
+      },
+      "CogSvcsOpenAITimeToResponsePolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsOpenAITimeToResponse Policy Effect",
+          "description": "Effect of the CogSvcsOpenAITimeToResponse policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "CogSvcsBlockedCallsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsBlockedCalls Severity",
+          "description": "Severity of the CogSvcsBlockedCalls Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "CogSvcsBlockedCallsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsBlockedCalls Window Size",
+          "description": "CogSvcsBlockedCalls Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "CogSvcsBlockedCallsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsBlockedCalls Evaluation Frequency",
+          "description": "CogSvcsBlockedCalls Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "CogSvcsBlockedCallsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsBlockedCalls Auto Mitigate",
+          "description": "Auto Mitigate for the CogSvcsBlockedCalls alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsBlockedCallsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsBlockedCalls Alert State",
+          "description": "Alert state for the CogSvcsBlockedCalls alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsBlockedCallsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsBlockedCalls Threshold",
+          "description": "Threshold for the CogSvcsBlockedCalls alert"
+        },
+        "defaultValue": "0"
+      },
+      "CogSvcsBlockedCallsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsBlockedCalls Policy Effect",
+          "description": "Effect of the CogSvcsBlockedCalls policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "CogSvcsClientErrorsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsClientErrors Severity",
+          "description": "Severity of the CogSvcsClientErrors Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "1"
+      },
+      "CogSvcsClientErrorsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsClientErrors Window Size",
+          "description": "CogSvcsClientErrors Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "CogSvcsClientErrorsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsClientErrors Evaluation Frequency",
+          "description": "CogSvcsClientErrors Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "CogSvcsClientErrorsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsClientErrors Auto Mitigate",
+          "description": "Auto Mitigate for the CogSvcsClientErrors alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsClientErrorsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsClientErrors Alert State",
+          "description": "Alert state for the CogSvcsClientErrors alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsClientErrorsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsClientErrors Threshold",
+          "description": "Threshold for the CogSvcsClientErrors alert"
+        },
+        "defaultValue": "0"
+      },
+      "CogSvcsClientErrorsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsClientErrors Policy Effect",
+          "description": "Effect of the CogSvcsClientErrors policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "CogSvcsLatencyAlertAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsLatencyAlert Severity",
+          "description": "Severity of the CogSvcsLatencyAlert Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "CogSvcsLatencyAlertWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsLatencyAlert Window Size",
+          "description": "CogSvcsLatencyAlert Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "CogSvcsLatencyAlertEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsLatencyAlert Evaluation Frequency",
+          "description": "CogSvcsLatencyAlert Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "CogSvcsLatencyAlertAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsLatencyAlert Auto Mitigate",
+          "description": "Auto Mitigate for the CogSvcsLatencyAlert alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsLatencyAlertAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsLatencyAlert Alert State",
+          "description": "Alert state for the CogSvcsLatencyAlert alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsLatencyAlertThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsLatencyAlert Threshold",
+          "description": "Threshold for the CogSvcsLatencyAlert alert"
+        },
+        "defaultValue": "90"
+      },
+      "CogSvcsLatencyAlertPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsLatencyAlert Policy Effect",
+          "description": "Effect of the CogSvcsLatencyAlert policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "CogSvcsRAIAbusUsrCountAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIAbusUsrCount Severity",
+          "description": "Severity of the CogSvcsRAIAbusUsrCount Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "CogSvcsRAIAbusUsrCountWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIAbusUsrCount Window Size",
+          "description": "CogSvcsRAIAbusUsrCount Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "CogSvcsRAIAbusUsrCountEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIAbusUsrCount Evaluation Frequency",
+          "description": "CogSvcsRAIAbusUsrCount Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "CogSvcsRAIAbusUsrCountAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIAbusUsrCount Auto Mitigate",
+          "description": "Auto Mitigate for the CogSvcsRAIAbusUsrCount alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsRAIAbusUsrCountAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIAbusUsrCount Alert State",
+          "description": "Alert state for the CogSvcsRAIAbusUsrCount alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsRAIAbusUsrCountThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIAbusUsrCount Threshold",
+          "description": "Threshold for the CogSvcsRAIAbusUsrCount alert"
+        },
+        "defaultValue": "90"
+      },
+      "CogSvcsRAIAbusUsrCountPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIAbusUsrCount Policy Effect",
+          "description": "Effect of the CogSvcsRAIAbusUsrCount policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "CogSvcsRAIHarmReqsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIHarmReqs Severity",
+          "description": "Severity of the CogSvcsRAIHarmReqs Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "0"
+      },
+      "CogSvcsRAIHarmReqsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIHarmReqs Window Size",
+          "description": "CogSvcsRAIHarmReqs Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "CogSvcsRAIHarmReqsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIHarmReqs Evaluation Frequency",
+          "description": "CogSvcsRAIHarmReqs Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "CogSvcsRAIHarmReqsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIHarmReqs Auto Mitigate",
+          "description": "Auto Mitigate for the CogSvcsRAIHarmReqs alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsRAIHarmReqsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIHarmReqs Alert State",
+          "description": "Alert state for the CogSvcsRAIHarmReqs alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsRAIHarmReqsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIHarmReqs Threshold",
+          "description": "Threshold for the CogSvcsRAIHarmReqs alert"
+        },
+        "defaultValue": "0"
+      },
+      "CogSvcsRAIHarmReqsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIHarmReqs Policy Effect",
+          "description": "Effect of the CogSvcsRAIHarmReqs policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "CogSvcsRAIRejectReqsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIRejectReqs Severity",
+          "description": "Severity of the CogSvcsRAIRejectReqs Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "0"
+      },
+      "CogSvcsRAIRejectReqsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIRejectReqs Window Size",
+          "description": "CogSvcsRAIRejectReqs Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "CogSvcsRAIRejectReqsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIRejectReqs Evaluation Frequency",
+          "description": "CogSvcsRAIRejectReqs Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "CogSvcsRAIRejectReqsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIRejectReqs Auto Mitigate",
+          "description": "Auto Mitigate for the CogSvcsRAIRejectReqs alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsRAIRejectReqsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIRejectReqs Alert State",
+          "description": "Alert state for the CogSvcsRAIRejectReqs alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsRAIRejectReqsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIRejectReqs Threshold",
+          "description": "Threshold for the CogSvcsRAIRejectReqs alert"
+        },
+        "defaultValue": "0"
+      },
+      "CogSvcsRAIRejectReqsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRAIRejectReqs Policy Effect",
+          "description": "Effect of the CogSvcsRAIRejectReqs policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "CogSvcsRateLimitAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRateLimit Severity",
+          "description": "Severity of the CogSvcsRateLimit Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "0"
+      },
+      "CogSvcsRateLimitWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRateLimit Window Size",
+          "description": "CogSvcsRateLimit Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "CogSvcsRateLimitEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRateLimit Evaluation Frequency",
+          "description": "CogSvcsRateLimit Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "CogSvcsRateLimitAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRateLimit Auto Mitigate",
+          "description": "Auto Mitigate for the CogSvcsRateLimit alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsRateLimitAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRateLimit Alert State",
+          "description": "Alert state for the CogSvcsRateLimit alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsRateLimitThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRateLimit Threshold",
+          "description": "Threshold for the CogSvcsRateLimit alert"
+        },
+        "defaultValue": "0"
+      },
+      "CogSvcsRateLimitPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsRateLimit Policy Effect",
+          "description": "Effect of the CogSvcsRateLimit policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      }
+    },
+    "policyDefinitions": [
+      {
+        "policyDefinitionReferenceId": "ALZ_ApimBackendDuration",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/fd5d63e0-ab2f-4300-af65-05bf2e490d0e",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ApimBackendDurationAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ApimBackendDurationWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ApimBackendDurationEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ApimBackendDurationPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ApimBackendDurationAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ApimBackendDurationAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('ApimBackendDurationThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_ApimDuration",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/52cd4aba-4ad0-402a-880d-ba625ebcf37f",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ApimDurationAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ApimDurationWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ApimDurationEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ApimDurationPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ApimDurationAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ApimDurationAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('ApimDurationThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_ApimFailedRequests",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/1f8626fe-812a-48a7-b237-2f9181a5ea12",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ApimFailedRequestsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ApimFailedRequestsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ApimFailedRequestsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ApimFailedRequestsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ApimFailedRequestsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ApimFailedRequestsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('ApimFailedRequestsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_ApimUnauthorizedRequests",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/c0c3e784-f488-43a6-a423-18dbb444d443",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ApimUnauthorizedRequestsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ApimUnauthorizedRequestsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ApimUnauthorizedRequestsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ApimUnauthorizedRequestsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ApimUnauthorizedRequestsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ApimUnauthorizedRequestsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('ApimUnauthorizedRequestsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_CogSvcsOpenAIProvUtilization",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/693a3b37-1e2a-42d1-aaed-b1f374276d1c",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('CogSvcsOpenAIProvUtilizationAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('CogSvcsOpenAIProvUtilizationWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('CogSvcsOpenAIProvUtilizationEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('CogSvcsOpenAIProvUtilizationPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('CogSvcsOpenAIProvUtilizationAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('CogSvcsOpenAIProvUtilizationAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('CogSvcsOpenAIProvUtilizationThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_CogSvcsOpenAITimeToResponse",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/995cc12a-1887-4669-92c5-70a6ca8bfe70",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('CogSvcsOpenAITimeToResponseAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('CogSvcsOpenAITimeToResponseWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('CogSvcsOpenAITimeToResponseEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('CogSvcsOpenAITimeToResponsePolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('CogSvcsOpenAITimeToResponseAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('CogSvcsOpenAITimeToResponseAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('CogSvcsOpenAITimeToResponseThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_CogSvcsBlockedCalls",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/87fe8679-655d-4acb-a37c-b7faebe26d47",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('CogSvcsBlockedCallsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('CogSvcsBlockedCallsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('CogSvcsBlockedCallsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('CogSvcsBlockedCallsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('CogSvcsBlockedCallsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('CogSvcsBlockedCallsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('CogSvcsBlockedCallsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_CogSvcsClientErrors",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/ec8c928a-5206-4059-8aea-8486004dd30d",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('CogSvcsClientErrorsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('CogSvcsClientErrorsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('CogSvcsClientErrorsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('CogSvcsClientErrorsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('CogSvcsClientErrorsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('CogSvcsClientErrorsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('CogSvcsClientErrorsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_CogSvcsLatencyAlert",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/d76ab40a-2831-4fa2-b476-5fdcda3d7c4c",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('CogSvcsLatencyAlertAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('CogSvcsLatencyAlertWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('CogSvcsLatencyAlertEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('CogSvcsLatencyAlertPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('CogSvcsLatencyAlertAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('CogSvcsLatencyAlertAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('CogSvcsLatencyAlertThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_CogSvcsRAIAbusUsrCount",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/f2926569-df78-4c68-90a7-3c5f96cfa1f3",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('CogSvcsRAIAbusUsrCountAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('CogSvcsRAIAbusUsrCountWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('CogSvcsRAIAbusUsrCountEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('CogSvcsRAIAbusUsrCountPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('CogSvcsRAIAbusUsrCountAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('CogSvcsRAIAbusUsrCountAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('CogSvcsRAIAbusUsrCountThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_CogSvcsRAIHarmReqs",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/e7341b29-84ea-4ca2-8140-e774b1cd1444",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('CogSvcsRAIHarmReqsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('CogSvcsRAIHarmReqsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('CogSvcsRAIHarmReqsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('CogSvcsRAIHarmReqsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('CogSvcsRAIHarmReqsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('CogSvcsRAIHarmReqsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('CogSvcsRAIHarmReqsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_CogSvcsRAIRejectReqs",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/a97c7421-8268-4837-b433-762882c3887f",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('CogSvcsRAIRejectReqsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('CogSvcsRAIRejectReqsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('CogSvcsRAIRejectReqsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('CogSvcsRAIRejectReqsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('CogSvcsRAIRejectReqsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('CogSvcsRAIRejectReqsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('CogSvcsRAIRejectReqsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_CogSvcsRateLimit",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/b269a4f9-ba74-4061-abc1-655d656c1c5f",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('CogSvcsRateLimitAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('CogSvcsRateLimitWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('CogSvcsRateLimitEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('CogSvcsRateLimitPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('CogSvcsRateLimitAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('CogSvcsRateLimitAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('CogSvcsRateLimitThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      }
+    ],
+    "policyType": "Custom",
+    "policyDefinitionGroups": null
+  }
+}
