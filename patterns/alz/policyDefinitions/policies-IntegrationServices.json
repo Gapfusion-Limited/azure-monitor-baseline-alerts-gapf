@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.38.33.27573",
-      "templateHash": "15431554714248235008"
+      "templateHash": "14436924975895652176"
     }
   },
   "parameters": {
@@ -1501,6 +1501,98 @@
             "metadata": {
               "displayName": "DataFactoryIntRunAvailMem Policy Effect",
               "description": "Effect of the DataFactoryIntRunAvailMem policy"
+            },
+            "allowedValues": [
+              "deployIfNotExists",
+              "disabled"
+            ],
+            "defaultValue": "deployIfNotExists"
+          },
+          "DataFactoryIntRunCpuPercentAlertSeverityAlertSeverity": {
+            "type": "String",
+            "metadata": {
+              "displayName": "DataFactoryIntRunCpuPercentAlertSeverity Severity",
+              "description": "Severity of the DataFactoryIntRunCpuPercentAlertSeverity Alert"
+            },
+            "allowedValues": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "defaultValue": "3"
+          },
+          "DataFactoryIntRunCpuPercentAlertSeverityWindowSize": {
+            "type": "String",
+            "metadata": {
+              "displayName": "DataFactoryIntRunCpuPercentAlertSeverity Window Size",
+              "description": "DataFactoryIntRunCpuPercentAlertSeverity Window size for the alert"
+            },
+            "allowedValues": [
+              "PT1M",
+              "PT5M",
+              "PT15M",
+              "PT30M",
+              "PT1H",
+              "PT6H",
+              "PT12H",
+              "P1D"
+            ],
+            "defaultValue": "PT5M"
+          },
+          "DataFactoryIntRunCpuPercentAlertSeverityEvaluationFrequency": {
+            "type": "String",
+            "metadata": {
+              "displayName": "DataFactoryIntRunCpuPercentAlertSeverity Evaluation Frequency",
+              "description": "DataFactoryIntRunCpuPercentAlertSeverity Evaluation frequency for the alert"
+            },
+            "allowedValues": [
+              "PT1M",
+              "PT5M",
+              "PT15M",
+              "PT30M",
+              "PT1H"
+            ],
+            "defaultValue": "PT1M"
+          },
+          "DataFactoryIntRunCpuPercentAlertSeverityAutoMitigate": {
+            "type": "String",
+            "metadata": {
+              "displayName": "DataFactoryIntRunCpuPercentAlertSeverity Auto Mitigate",
+              "description": "Auto Mitigate for the DataFactoryIntRunCpuPercentAlertSeverity alert"
+            },
+            "allowedValues": [
+              "true",
+              "false"
+            ],
+            "defaultValue": "true"
+          },
+          "DataFactoryIntRunCpuPercentAlertSeverityAlertEnabled": {
+            "type": "String",
+            "metadata": {
+              "displayName": "DataFactoryIntRunCpuPercentAlertSeverity Alert State",
+              "description": "Alert state for the DataFactoryIntRunCpuPercentAlertSeverity alert"
+            },
+            "allowedValues": [
+              "true",
+              "false"
+            ],
+            "defaultValue": "true"
+          },
+          "DataFactoryIntRunCpuPercentAlertSeverityThreshold": {
+            "type": "String",
+            "metadata": {
+              "displayName": "DataFactoryIntRunCpuPercentAlertSeverity Threshold",
+              "description": "Threshold for the DataFactoryIntRunCpuPercentAlertSeverity alert"
+            },
+            "defaultValue": "95"
+          },
+          "DataFactoryIntRunCpuPercentAlertSeverityPolicyEffect": {
+            "type": "String",
+            "metadata": {
+              "displayName": "DataFactoryIntRunCpuPercentAlertSeverity Policy Effect",
+              "description": "Effect of the DataFactoryIntRunCpuPercentAlertSeverity policy"
             },
             "allowedValues": [
               "deployIfNotExists",
