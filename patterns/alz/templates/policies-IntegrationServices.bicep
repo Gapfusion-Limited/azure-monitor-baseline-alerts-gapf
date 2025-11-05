@@ -163,6 +163,7 @@ var loadPolicyDefinitions = {
 var loadPolicySetDefinitions = {
   All: [
     string(loadJsonContent('../policySetDefinitions/Deploy-IntegrationServices-Alerts.json'))
+    string(loadJsonContent('../policySetDefinitions/Deploy-IntegrationServices-Alerts-2.json'))
   ]
   AzureCloud: []
   AzureChinaCloud: []

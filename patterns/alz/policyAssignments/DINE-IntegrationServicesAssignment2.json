@@ -31,12 +31,12 @@
   },
   "variables": {
     "policyDefinitions": {
-      "deployAMBAIntSvcs": "[concat('/providers/Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'), '/providers/Microsoft.Authorization/policySetDefinitions/Alerting-IntegrationServices')]"
+      "deployAMBAIntSvcs": "[concat('/providers/Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'), '/providers/Microsoft.Authorization/policySetDefinitions/Alerting-IntegrationServices-2')]"
     },
     "policyAssignmentNames": {
       "ambaIntSvcs": "Deploy-AMBA-IntSvcs",
       "description": "This initiative deploys Azure Monitor Baseline Alerts (AMBA-ALZ) to monitor Integration Services such as API Management (APIM), Cognitive Services (Azure AI), Container Instances, Data Factory, EventGrid, EventHub, Logic Apps, Machine Learning, Service Bus.",
-      "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) for Integration Services - Part #1"
+      "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) for Integration Services - Part #2"
     },
     "nonComplianceMessage": {
       "message": "Alerting {enforcementMode} be deployed to Azure services.",
