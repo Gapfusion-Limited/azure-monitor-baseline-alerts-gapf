@@ -1231,6 +1231,4258 @@
           "disabled"
         ],
         "defaultValue": "deployIfNotExists"
+      },
+      "CogSvcsServerErrorsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsServerErrors Severity",
+          "description": "Severity of the CogSvcsServerErrors Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "CogSvcsServerErrorsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsServerErrors Window Size",
+          "description": "CogSvcsServerErrors Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "CogSvcsServerErrorsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsServerErrors Evaluation Frequency",
+          "description": "CogSvcsServerErrors Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "CogSvcsServerErrorsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsServerErrors Auto Mitigate",
+          "description": "Auto Mitigate for the CogSvcsServerErrors alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsServerErrorsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsServerErrors Alert State",
+          "description": "Alert state for the CogSvcsServerErrors alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsServerErrorsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsServerErrors Threshold",
+          "description": "Threshold for the CogSvcsServerErrors alert"
+        },
+        "defaultValue": "0"
+      },
+      "CogSvcsServerErrorsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsServerErrors Policy Effect",
+          "description": "Effect of the CogSvcsServerErrors policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "CogSvcsTotalErrorsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsTotalErrors Severity",
+          "description": "Severity of the CogSvcsTotalErrors Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "CogSvcsTotalErrorsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsTotalErrors Window Size",
+          "description": "CogSvcsTotalErrors Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "CogSvcsTotalErrorsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsTotalErrors Evaluation Frequency",
+          "description": "CogSvcsTotalErrors Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "CogSvcsTotalErrorsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsTotalErrors Auto Mitigate",
+          "description": "Auto Mitigate for the CogSvcsTotalErrors alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsTotalErrorsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsTotalErrors Alert State",
+          "description": "Alert state for the CogSvcsTotalErrors alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "CogSvcsTotalErrorsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsTotalErrors Threshold",
+          "description": "Threshold for the CogSvcsTotalErrors alert"
+        },
+        "defaultValue": "5"
+      },
+      "CogSvcsTotalErrorsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CogSvcsTotalErrors Policy Effect",
+          "description": "Effect of the CogSvcsTotalErrors policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "ContInstCpuUsageAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContInstCpuUsage Severity",
+          "description": "Severity of the ContInstCpuUsage Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "ContInstCpuUsageWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContInstCpuUsage Window Size",
+          "description": "ContInstCpuUsage Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ContInstCpuUsageEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContInstCpuUsage Evaluation Frequency",
+          "description": "ContInstCpuUsage Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ContInstCpuUsageAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContInstCpuUsage Auto Mitigate",
+          "description": "Auto Mitigate for the ContInstCpuUsage alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ContInstCpuUsageAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContInstCpuUsage Alert State",
+          "description": "Alert state for the ContInstCpuUsage alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ContInstCpuUsageAlertSensitivity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContInstCpuUsage Alert Sensitivity",
+          "description": "Alert Sensitivity for the ContInstCpuUsage alert"
+        },
+        "allowedValues": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "defaultValue": "Low"
+      },
+      "ContInstCpuUsagePolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContInstCpuUsage Policy Effect",
+          "description": "Effect of the ContInstCpuUsage policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "ContInstMemoryUsageAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContInstMemoryUsage Severity",
+          "description": "Severity of the ContInstMemoryUsage Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "ContInstMemoryUsageWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContInstMemoryUsage Window Size",
+          "description": "ContInstMemoryUsage Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ContInstMemoryUsageEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContInstMemoryUsage Evaluation Frequency",
+          "description": "ContInstMemoryUsage Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ContInstMemoryUsageAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContInstMemoryUsage Auto Mitigate",
+          "description": "Auto Mitigate for the ContInstMemoryUsage alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ContInstMemoryUsageAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContInstMemoryUsage Alert State",
+          "description": "Alert state for the ContInstMemoryUsage alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ContInstMemoryUsageAlertSensitivity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContInstMemoryUsage Alert Sensitivity",
+          "description": "Alert Sensitivity for the ContInstMemoryUsage alert"
+        },
+        "allowedValues": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "defaultValue": "Low"
+      },
+      "ContInstMemoryUsagePolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContInstMemoryUsage Policy Effect",
+          "description": "Effect of the ContInstMemoryUsage policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "ContSvcClusterAutoScaleUnscheduledAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcClusterAutoScaleUnscheduled Severity",
+          "description": "Severity of the ContSvcClusterAutoScaleUnscheduled Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "ContSvcClusterAutoScaleUnscheduledWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcClusterAutoScaleUnscheduled Window Size",
+          "description": "ContSvcClusterAutoScaleUnscheduled Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ContSvcClusterAutoScaleUnscheduledEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcClusterAutoScaleUnscheduled Evaluation Frequency",
+          "description": "ContSvcClusterAutoScaleUnscheduled Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "ContSvcClusterAutoScaleUnscheduledAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcClusterAutoScaleUnscheduled Auto Mitigate",
+          "description": "Auto Mitigate for the ContSvcClusterAutoScaleUnscheduled alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ContSvcClusterAutoScaleUnscheduledAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcClusterAutoScaleUnscheduled Alert State",
+          "description": "Alert state for the ContSvcClusterAutoScaleUnscheduled alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ContSvcClusterAutoScaleUnscheduledThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcClusterAutoScaleUnscheduled Threshold",
+          "description": "Threshold for the ContSvcClusterAutoScaleUnscheduled alert"
+        },
+        "defaultValue": "0"
+      },
+      "ContSvcClusterAutoScaleUnscheduledPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcClusterAutoScaleUnscheduled Policy Effect",
+          "description": "Effect of the ContSvcClusterAutoScaleUnscheduled policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "ContSvcNodeAllocCpuCoresAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeAllocCpuCores Severity",
+          "description": "Severity of the ContSvcNodeAllocCpuCores Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "ContSvcNodeAllocCpuCoresWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeAllocCpuCores Window Size",
+          "description": "ContSvcNodeAllocCpuCores Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ContSvcNodeAllocCpuCoresEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeAllocCpuCores Evaluation Frequency",
+          "description": "ContSvcNodeAllocCpuCores Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "ContSvcNodeAllocCpuCoresAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeAllocCpuCores Auto Mitigate",
+          "description": "Auto Mitigate for the ContSvcNodeAllocCpuCores alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ContSvcNodeAllocCpuCoresAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeAllocCpuCores Alert State",
+          "description": "Alert state for the ContSvcNodeAllocCpuCores alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ContSvcNodeAllocCpuCoresThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeAllocCpuCores Threshold",
+          "description": "Threshold for the ContSvcNodeAllocCpuCores alert"
+        },
+        "defaultValue": "2"
+      },
+      "ContSvcNodeAllocCpuCoresPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeAllocCpuCores Policy Effect",
+          "description": "Effect of the ContSvcNodeAllocCpuCores policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "ContSvcNodeCpuPercentAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeCpuPercent Severity",
+          "description": "Severity of the ContSvcNodeCpuPercent Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "ContSvcNodeCpuPercentWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeCpuPercent Window Size",
+          "description": "ContSvcNodeCpuPercent Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ContSvcNodeCpuPercentEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeCpuPercent Evaluation Frequency",
+          "description": "ContSvcNodeCpuPercent Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ContSvcNodeCpuPercentAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeCpuPercent Auto Mitigate",
+          "description": "Auto Mitigate for the ContSvcNodeCpuPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ContSvcNodeCpuPercentAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeCpuPercent Alert State",
+          "description": "Alert state for the ContSvcNodeCpuPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ContSvcNodeCpuPercentThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeCpuPercent Threshold",
+          "description": "Threshold for the ContSvcNodeCpuPercent alert"
+        },
+        "defaultValue": "95"
+      },
+      "ContSvcNodeCpuPercentPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeCpuPercent Policy Effect",
+          "description": "Effect of the ContSvcNodeCpuPercent policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "ContSvcNodeDiskPercentAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeDiskPercent Severity",
+          "description": "Severity of the ContSvcNodeDiskPercent Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "ContSvcNodeDiskPercentWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeDiskPercent Window Size",
+          "description": "ContSvcNodeDiskPercent Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ContSvcNodeDiskPercentEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeDiskPercent Evaluation Frequency",
+          "description": "ContSvcNodeDiskPercent Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "ContSvcNodeDiskPercentAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeDiskPercent Auto Mitigate",
+          "description": "Auto Mitigate for the ContSvcNodeDiskPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ContSvcNodeDiskPercentAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeDiskPercent Alert State",
+          "description": "Alert state for the ContSvcNodeDiskPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ContSvcNodeDiskPercentThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeDiskPercent Threshold",
+          "description": "Threshold for the ContSvcNodeDiskPercent alert"
+        },
+        "defaultValue": "80"
+      },
+      "ContSvcNodeDiskPercentPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeDiskPercent Policy Effect",
+          "description": "Effect of the ContSvcNodeDiskPercent policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "ContSvcNodeMemoryRssPercentAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeMemoryRssPercent Severity",
+          "description": "Severity of the ContSvcNodeMemoryRssPercent Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "ContSvcNodeMemoryRssPercentWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeMemoryRssPercent Window Size",
+          "description": "ContSvcNodeMemoryRssPercent Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ContSvcNodeMemoryRssPercentEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeMemoryRssPercent Evaluation Frequency",
+          "description": "ContSvcNodeMemoryRssPercent Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "ContSvcNodeMemoryRssPercentAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeMemoryRssPercent Auto Mitigate",
+          "description": "Auto Mitigate for the ContSvcNodeMemoryRssPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ContSvcNodeMemoryRssPercentAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeMemoryRssPercent Alert State",
+          "description": "Alert state for the ContSvcNodeMemoryRssPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ContSvcNodeMemoryRssPercentThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeMemoryRssPercent Threshold",
+          "description": "Threshold for the ContSvcNodeMemoryRssPercent alert"
+        },
+        "defaultValue": "90"
+      },
+      "ContSvcNodeMemoryRssPercentPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeMemoryRssPercent Policy Effect",
+          "description": "Effect of the ContSvcNodeMemoryRssPercent policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "ContSvcNodeMemoryWorkSetPercentAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeMemoryWorkSetPercent Severity",
+          "description": "Severity of the ContSvcNodeMemoryWorkSetPercent Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "ContSvcNodeMemoryWorkSetPercentWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeMemoryWorkSetPercent Window Size",
+          "description": "ContSvcNodeMemoryWorkSetPercent Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ContSvcNodeMemoryWorkSetPercentEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeMemoryWorkSetPercent Evaluation Frequency",
+          "description": "ContSvcNodeMemoryWorkSetPercent Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ContSvcNodeMemoryWorkSetPercentAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeMemoryWorkSetPercent Auto Mitigate",
+          "description": "Auto Mitigate for the ContSvcNodeMemoryWorkSetPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ContSvcNodeMemoryWorkSetPercentAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeMemoryWorkSetPercent Alert State",
+          "description": "Alert state for the ContSvcNodeMemoryWorkSetPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ContSvcNodeMemoryWorkSetPercentThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeMemoryWorkSetPercent Threshold",
+          "description": "Threshold for the ContSvcNodeMemoryWorkSetPercent alert"
+        },
+        "defaultValue": "100"
+      },
+      "ContSvcNodeMemoryWorkSetPercentPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ContSvcNodeMemoryWorkSetPercent Policy Effect",
+          "description": "Effect of the ContSvcNodeMemoryWorkSetPercent policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "DataFactoryActFailRunsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryActFailRuns Severity",
+          "description": "Severity of the DataFactoryActFailRuns Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "1"
+      },
+      "DataFactoryActFailRunsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryActFailRuns Window Size",
+          "description": "DataFactoryActFailRuns Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "DataFactoryActFailRunsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryActFailRuns Evaluation Frequency",
+          "description": "DataFactoryActFailRuns Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "DataFactoryActFailRunsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryActFailRuns Auto Mitigate",
+          "description": "Auto Mitigate for the DataFactoryActFailRuns alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "DataFactoryActFailRunsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryActFailRuns Alert State",
+          "description": "Alert state for the DataFactoryActFailRuns alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "DataFactoryActFailRunsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryActFailRuns Threshold",
+          "description": "Threshold for the DataFactoryActFailRuns alert"
+        },
+        "defaultValue": "0"
+      },
+      "DataFactoryActFailRunsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryActFailRuns Policy Effect",
+          "description": "Effect of the DataFactoryActFailRuns policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "DataFactoryIntRunAvailMemAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryIntRunAvailMem Severity",
+          "description": "Severity of the DataFactoryIntRunAvailMem Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "DataFactoryIntRunAvailMemWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryIntRunAvailMem Window Size",
+          "description": "DataFactoryIntRunAvailMem Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "DataFactoryIntRunAvailMemEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryIntRunAvailMem Evaluation Frequency",
+          "description": "DataFactoryIntRunAvailMem Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "DataFactoryIntRunAvailMemAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryIntRunAvailMem Auto Mitigate",
+          "description": "Auto Mitigate for the DataFactoryIntRunAvailMem alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "DataFactoryIntRunAvailMemAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryIntRunAvailMem Alert State",
+          "description": "Alert state for the DataFactoryIntRunAvailMem alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "DataFactoryIntRunAvailMemThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryIntRunAvailMem Threshold",
+          "description": "Threshold for the DataFactoryIntRunAvailMem alert"
+        },
+        "defaultValue": "5000000000"
+      },
+      "DataFactoryIntRunAvailMemPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryIntRunAvailMem Policy Effect",
+          "description": "Effect of the DataFactoryIntRunAvailMem policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "DataFactoryPipeFailRunsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryPipeFailRuns Severity",
+          "description": "Severity of the DataFactoryPipeFailRuns Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "1"
+      },
+      "DataFactoryPipeFailRunsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryPipeFailRuns Window Size",
+          "description": "DataFactoryPipeFailRuns Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "DataFactoryPipeFailRunsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryPipeFailRuns Evaluation Frequency",
+          "description": "DataFactoryPipeFailRuns Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "DataFactoryPipeFailRunsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryPipeFailRuns Auto Mitigate",
+          "description": "Auto Mitigate for the DataFactoryPipeFailRuns alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "DataFactoryPipeFailRunsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryPipeFailRuns Alert State",
+          "description": "Alert state for the DataFactoryPipeFailRuns alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "DataFactoryPipeFailRunsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryPipeFailRuns Threshold",
+          "description": "Threshold for the DataFactoryPipeFailRuns alert"
+        },
+        "defaultValue": "0"
+      },
+      "DataFactoryPipeFailRunsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryPipeFailRuns Policy Effect",
+          "description": "Effect of the DataFactoryPipeFailRuns policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "DataFactoryTrigFailRunsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryTrigFailRuns Severity",
+          "description": "Severity of the DataFactoryTrigFailRuns Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "1"
+      },
+      "DataFactoryTrigFailRunsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryTrigFailRuns Window Size",
+          "description": "DataFactoryTrigFailRuns Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "DataFactoryTrigFailRunsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryTrigFailRuns Evaluation Frequency",
+          "description": "DataFactoryTrigFailRuns Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "DataFactoryTrigFailRunsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryTrigFailRuns Auto Mitigate",
+          "description": "Auto Mitigate for the DataFactoryTrigFailRuns alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "DataFactoryTrigFailRunsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryTrigFailRuns Alert State",
+          "description": "Alert state for the DataFactoryTrigFailRuns alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "DataFactoryTrigFailRunsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryTrigFailRuns Threshold",
+          "description": "Threshold for the DataFactoryTrigFailRuns alert"
+        },
+        "defaultValue": "0"
+      },
+      "DataFactoryTrigFailRunsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "DataFactoryTrigFailRuns Policy Effect",
+          "description": "Effect of the DataFactoryTrigFailRuns policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "EventGridSysTopDelFailCountAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridSysTopDelFailCount Severity",
+          "description": "Severity of the EventGridSysTopDelFailCount Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "EventGridSysTopDelFailCountWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridSysTopDelFailCount Window Size",
+          "description": "EventGridSysTopDelFailCount Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "EventGridSysTopDelFailCountEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridSysTopDelFailCount Evaluation Frequency",
+          "description": "EventGridSysTopDelFailCount Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "EventGridSysTopDelFailCountAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridSysTopDelFailCount Auto Mitigate",
+          "description": "Auto Mitigate for the EventGridSysTopDelFailCount alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventGridSysTopDelFailCountAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridSysTopDelFailCount Alert State",
+          "description": "Alert state for the EventGridSysTopDelFailCount alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventGridSysTopDelFailCountThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridSysTopDelFailCount Threshold",
+          "description": "Threshold for the EventGridSysTopDelFailCount alert"
+        },
+        "defaultValue": "0"
+      },
+      "EventGridSysTopDelFailCountPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridSysTopDelFailCount Policy Effect",
+          "description": "Effect of the EventGridSysTopDelFailCount policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "EventGridSysTopPubFailCountAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridSysTopPubFailCount Severity",
+          "description": "Severity of the EventGridSysTopPubFailCount Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "0"
+      },
+      "EventGridSysTopPubFailCountWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridSysTopPubFailCount Window Size",
+          "description": "EventGridSysTopPubFailCount Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "EventGridSysTopPubFailCountEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridSysTopPubFailCount Evaluation Frequency",
+          "description": "EventGridSysTopPubFailCount Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "EventGridSysTopPubFailCountAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridSysTopPubFailCount Auto Mitigate",
+          "description": "Auto Mitigate for the EventGridSysTopPubFailCount alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventGridSysTopPubFailCountAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridSysTopPubFailCount Alert State",
+          "description": "Alert state for the EventGridSysTopPubFailCount alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventGridSysTopPubFailCountThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridSysTopPubFailCount Threshold",
+          "description": "Threshold for the EventGridSysTopPubFailCount alert"
+        },
+        "defaultValue": "0"
+      },
+      "EventGridSysTopPubFailCountPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridSysTopPubFailCount Policy Effect",
+          "description": "Effect of the EventGridSysTopPubFailCount policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "EventGridTopDelFailCountAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridTopDelFailCount Severity",
+          "description": "Severity of the EventGridTopDelFailCount Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "EventGridTopDelFailCountWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridTopDelFailCount Window Size",
+          "description": "EventGridTopDelFailCount Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "EventGridTopDelFailCountEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridTopDelFailCount Evaluation Frequency",
+          "description": "EventGridTopDelFailCount Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "EventGridTopDelFailCountAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridTopDelFailCount Auto Mitigate",
+          "description": "Auto Mitigate for the EventGridTopDelFailCount alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventGridTopDelFailCountAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridTopDelFailCount Alert State",
+          "description": "Alert state for the EventGridTopDelFailCount alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventGridTopDelFailCountThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridTopDelFailCount Threshold",
+          "description": "Threshold for the EventGridTopDelFailCount alert"
+        },
+        "defaultValue": "1"
+      },
+      "EventGridTopDelFailCountPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridTopDelFailCount Policy Effect",
+          "description": "Effect of the EventGridTopDelFailCount policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "EventGridTopPubFailCountAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridTopPubFailCount Severity",
+          "description": "Severity of the EventGridTopPubFailCount Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "EventGridTopPubFailCountWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridTopPubFailCount Window Size",
+          "description": "EventGridTopPubFailCount Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "EventGridTopPubFailCountEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridTopPubFailCount Evaluation Frequency",
+          "description": "EventGridTopPubFailCount Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "EventGridTopPubFailCountAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridTopPubFailCount Auto Mitigate",
+          "description": "Auto Mitigate for the EventGridTopPubFailCount alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventGridTopPubFailCountAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridTopPubFailCount Alert State",
+          "description": "Alert state for the EventGridTopPubFailCount alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventGridTopPubFailCountThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridTopPubFailCount Threshold",
+          "description": "Threshold for the EventGridTopPubFailCount alert"
+        },
+        "defaultValue": "5"
+      },
+      "EventGridTopPubFailCountPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventGridTopPubFailCount Policy Effect",
+          "description": "Effect of the EventGridTopPubFailCount policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "EventHubNameCpuUsageAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubNameCpuUsage Severity",
+          "description": "Severity of the EventHubNameCpuUsage Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "EventHubNameCpuUsageWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubNameCpuUsage Window Size",
+          "description": "EventHubNameCpuUsage Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT15M"
+      },
+      "EventHubNameCpuUsageEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubNameCpuUsage Evaluation Frequency",
+          "description": "EventHubNameCpuUsage Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "EventHubNameCpuUsageAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubNameCpuUsage Auto Mitigate",
+          "description": "Auto Mitigate for the EventHubNameCpuUsage alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventHubNameCpuUsageAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubNameCpuUsage Alert State",
+          "description": "Alert state for the EventHubNameCpuUsage alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventHubNameCpuUsageThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubNameCpuUsage Threshold",
+          "description": "Threshold for the EventHubNameCpuUsage alert"
+        },
+        "defaultValue": "80"
+      },
+      "EventHubNameCpuUsagePolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubNameCpuUsage Policy Effect",
+          "description": "Effect of the EventHubNameCpuUsage policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "EventHubNameMemUsageAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubNameMemUsage Severity",
+          "description": "Severity of the EventHubNameMemUsage Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "EventHubNameMemUsageWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubNameMemUsage Window Size",
+          "description": "EventHubNameMemUsage Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT15M"
+      },
+      "EventHubNameMemUsageEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubNameMemUsage Evaluation Frequency",
+          "description": "EventHubNameMemUsage Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "EventHubNameMemUsageAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubNameMemUsage Auto Mitigate",
+          "description": "Auto Mitigate for the EventHubNameMemUsage alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventHubNameMemUsageAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubNameMemUsage Alert State",
+          "description": "Alert state for the EventHubNameMemUsage alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventHubNameMemUsageThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubNameMemUsage Threshold",
+          "description": "Threshold for the EventHubNameMemUsage alert"
+        },
+        "defaultValue": "80"
+      },
+      "EventHubNameMemUsagePolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubNameMemUsage Policy Effect",
+          "description": "Effect of the EventHubNameMemUsage policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "EventHubQuotaExceedErrorsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubQuotaExceedErrors Severity",
+          "description": "Severity of the EventHubQuotaExceedErrors Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "EventHubQuotaExceedErrorsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubQuotaExceedErrors Window Size",
+          "description": "EventHubQuotaExceedErrors Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "EventHubQuotaExceedErrorsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubQuotaExceedErrors Evaluation Frequency",
+          "description": "EventHubQuotaExceedErrors Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "EventHubQuotaExceedErrorsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubQuotaExceedErrors Auto Mitigate",
+          "description": "Auto Mitigate for the EventHubQuotaExceedErrors alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventHubQuotaExceedErrorsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubQuotaExceedErrors Alert State",
+          "description": "Alert state for the EventHubQuotaExceedErrors alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventHubQuotaExceedErrorsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubQuotaExceedErrors Threshold",
+          "description": "Threshold for the EventHubQuotaExceedErrors alert"
+        },
+        "defaultValue": "0"
+      },
+      "EventHubQuotaExceedErrorsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubQuotaExceedErrors Policy Effect",
+          "description": "Effect of the EventHubQuotaExceedErrors policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "EventHubServerErrorsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubServerErrors Severity",
+          "description": "Severity of the EventHubServerErrors Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "EventHubServerErrorsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubServerErrors Window Size",
+          "description": "EventHubServerErrors Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "EventHubServerErrorsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubServerErrors Evaluation Frequency",
+          "description": "EventHubServerErrors Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "EventHubServerErrorsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubServerErrors Auto Mitigate",
+          "description": "Auto Mitigate for the EventHubServerErrors alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventHubServerErrorsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubServerErrors Alert State",
+          "description": "Alert state for the EventHubServerErrors alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventHubServerErrorsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubServerErrors Threshold",
+          "description": "Threshold for the EventHubServerErrors alert"
+        },
+        "defaultValue": "5"
+      },
+      "EventHubServerErrorsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubServerErrors Policy Effect",
+          "description": "Effect of the EventHubServerErrors policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "EventHubThrottledReqsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubThrottledReqs Severity",
+          "description": "Severity of the EventHubThrottledReqs Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "EventHubThrottledReqsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubThrottledReqs Window Size",
+          "description": "EventHubThrottledReqs Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT15M"
+      },
+      "EventHubThrottledReqsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubThrottledReqs Evaluation Frequency",
+          "description": "EventHubThrottledReqs Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "EventHubThrottledReqsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubThrottledReqs Auto Mitigate",
+          "description": "Auto Mitigate for the EventHubThrottledReqs alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventHubThrottledReqsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubThrottledReqs Alert State",
+          "description": "Alert state for the EventHubThrottledReqs alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventHubThrottledReqsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubThrottledReqs Threshold",
+          "description": "Threshold for the EventHubThrottledReqs alert"
+        },
+        "defaultValue": "0"
+      },
+      "EventHubThrottledReqsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubThrottledReqs Policy Effect",
+          "description": "Effect of the EventHubThrottledReqs policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "EventHubUserErrorsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubUserErrors Severity",
+          "description": "Severity of the EventHubUserErrors Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "EventHubUserErrorsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubUserErrors Window Size",
+          "description": "EventHubUserErrors Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "EventHubUserErrorsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubUserErrors Evaluation Frequency",
+          "description": "EventHubUserErrors Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "EventHubUserErrorsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubUserErrors Auto Mitigate",
+          "description": "Auto Mitigate for the EventHubUserErrors alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventHubUserErrorsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubUserErrors Alert State",
+          "description": "Alert state for the EventHubUserErrors alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "EventHubUserErrorsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubUserErrors Threshold",
+          "description": "Threshold for the EventHubUserErrors alert"
+        },
+        "defaultValue": "5"
+      },
+      "EventHubUserErrorsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "EventHubUserErrors Policy Effect",
+          "description": "Effect of the EventHubUserErrors policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "LogicActionLatencyAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionLatency Severity",
+          "description": "Severity of the LogicActionLatency Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "LogicActionLatencyWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionLatency Window Size",
+          "description": "LogicActionLatency Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "LogicActionLatencyEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionLatency Evaluation Frequency",
+          "description": "LogicActionLatency Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "LogicActionLatencyAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionLatency Auto Mitigate",
+          "description": "Auto Mitigate for the LogicActionLatency alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicActionLatencyAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionLatency Alert State",
+          "description": "Alert state for the LogicActionLatency alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicActionLatencyAlertSensitivity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionLatency Alert Sensitivity",
+          "description": "Alert Sensitivity for the LogicActionLatency alert"
+        },
+        "allowedValues": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "defaultValue": "Low"
+      },
+      "LogicActionLatencyPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionLatency Policy Effect",
+          "description": "Effect of the LogicActionLatency policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "LogicActionFailedAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionFailed Severity",
+          "description": "Severity of the LogicActionFailed Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "LogicActionFailedWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionFailed Window Size",
+          "description": "LogicActionFailed Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "LogicActionFailedEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionFailed Evaluation Frequency",
+          "description": "LogicActionFailed Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "LogicActionFailedAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionFailed Auto Mitigate",
+          "description": "Auto Mitigate for the LogicActionFailed alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicActionFailedAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionFailed Alert State",
+          "description": "Alert state for the LogicActionFailed alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicActionFailedThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionFailed Threshold",
+          "description": "Threshold for the LogicActionFailed alert"
+        },
+        "defaultValue": "0"
+      },
+      "LogicActionFailedPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionFailed Policy Effect",
+          "description": "Effect of the LogicActionFailed policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "LogicActionThrottledAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionThrottled Severity",
+          "description": "Severity of the LogicActionThrottled Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "LogicActionThrottledWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionThrottled Window Size",
+          "description": "LogicActionThrottled Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "LogicActionThrottledEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionThrottled Evaluation Frequency",
+          "description": "LogicActionThrottled Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "LogicActionThrottledAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionThrottled Auto Mitigate",
+          "description": "Auto Mitigate for the LogicActionThrottled alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicActionThrottledAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionThrottled Alert State",
+          "description": "Alert state for the LogicActionThrottled alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicActionThrottledThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionThrottled Threshold",
+          "description": "Threshold for the LogicActionThrottled alert"
+        },
+        "defaultValue": "0"
+      },
+      "LogicActionThrottledPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicActionThrottled Policy Effect",
+          "description": "Effect of the LogicActionThrottled policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "LogicRunFailPercentAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunFailPercent Severity",
+          "description": "Severity of the LogicRunFailPercent Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "LogicRunFailPercentWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunFailPercent Window Size",
+          "description": "LogicRunFailPercent Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT1H"
+      },
+      "LogicRunFailPercentEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunFailPercent Evaluation Frequency",
+          "description": "LogicRunFailPercent Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT15M"
+      },
+      "LogicRunFailPercentAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunFailPercent Auto Mitigate",
+          "description": "Auto Mitigate for the LogicRunFailPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicRunFailPercentAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunFailPercent Alert State",
+          "description": "Alert state for the LogicRunFailPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicRunFailPercentThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunFailPercent Threshold",
+          "description": "Threshold for the LogicRunFailPercent alert"
+        },
+        "defaultValue": "50"
+      },
+      "LogicRunFailPercentPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunFailPercent Policy Effect",
+          "description": "Effect of the LogicRunFailPercent policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "LogicRunLatencyAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunLatency Severity",
+          "description": "Severity of the LogicRunLatency Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "LogicRunLatencyWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunLatency Window Size",
+          "description": "LogicRunLatency Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "LogicRunLatencyEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunLatency Evaluation Frequency",
+          "description": "LogicRunLatency Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "LogicRunLatencyAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunLatency Auto Mitigate",
+          "description": "Auto Mitigate for the LogicRunLatency alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicRunLatencyAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunLatency Alert State",
+          "description": "Alert state for the LogicRunLatency alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicRunLatencyThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunLatency Threshold",
+          "description": "Threshold for the LogicRunLatency alert"
+        },
+        "defaultValue": "99999"
+      },
+      "LogicRunLatencyPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunLatency Policy Effect",
+          "description": "Effect of the LogicRunLatency policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "LogicRunFailedAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunFailed Severity",
+          "description": "Severity of the LogicRunFailed Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "LogicRunFailedWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunFailed Window Size",
+          "description": "LogicRunFailed Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "LogicRunFailedEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunFailed Evaluation Frequency",
+          "description": "LogicRunFailed Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "LogicRunFailedAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunFailed Auto Mitigate",
+          "description": "Auto Mitigate for the LogicRunFailed alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicRunFailedAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunFailed Alert State",
+          "description": "Alert state for the LogicRunFailed alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicRunFailedThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunFailed Threshold",
+          "description": "Threshold for the LogicRunFailed alert"
+        },
+        "defaultValue": "0"
+      },
+      "LogicRunFailedPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunFailed Policy Effect",
+          "description": "Effect of the LogicRunFailed policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "LogicRunStartThrottledAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunStartThrottled Severity",
+          "description": "Severity of the LogicRunStartThrottled Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "LogicRunStartThrottledWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunStartThrottled Window Size",
+          "description": "LogicRunStartThrottled Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "LogicRunStartThrottledEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunStartThrottled Evaluation Frequency",
+          "description": "LogicRunStartThrottled Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "LogicRunStartThrottledAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunStartThrottled Auto Mitigate",
+          "description": "Auto Mitigate for the LogicRunStartThrottled alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicRunStartThrottledAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunStartThrottled Alert State",
+          "description": "Alert state for the LogicRunStartThrottled alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicRunStartThrottledThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunStartThrottled Threshold",
+          "description": "Threshold for the LogicRunStartThrottled alert"
+        },
+        "defaultValue": "0"
+      },
+      "LogicRunStartThrottledPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunStartThrottled Policy Effect",
+          "description": "Effect of the LogicRunStartThrottled policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "LogicRunThrottledAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunThrottled Severity",
+          "description": "Severity of the LogicRunThrottled Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "LogicRunThrottledWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunThrottled Window Size",
+          "description": "LogicRunThrottled Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "LogicRunThrottledEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunThrottled Evaluation Frequency",
+          "description": "LogicRunThrottled Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "LogicRunThrottledAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunThrottled Auto Mitigate",
+          "description": "Auto Mitigate for the LogicRunThrottled alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicRunThrottledAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunThrottled Alert State",
+          "description": "Alert state for the LogicRunThrottled alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicRunThrottledThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunThrottled Threshold",
+          "description": "Threshold for the LogicRunThrottled alert"
+        },
+        "defaultValue": "1"
+      },
+      "LogicRunThrottledPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicRunThrottled Policy Effect",
+          "description": "Effect of the LogicRunThrottled policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "LogicTrigLatencyAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigLatency Severity",
+          "description": "Severity of the LogicTrigLatency Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "LogicTrigLatencyWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigLatency Window Size",
+          "description": "LogicTrigLatency Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "LogicTrigLatencyEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigLatency Evaluation Frequency",
+          "description": "LogicTrigLatency Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "LogicTrigLatencyAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigLatency Auto Mitigate",
+          "description": "Auto Mitigate for the LogicTrigLatency alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicTrigLatencyAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigLatency Alert State",
+          "description": "Alert state for the LogicTrigLatency alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicTrigLatencyAlertSensitivity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigLatency Alert Sensitivity",
+          "description": "Alert Sensitivity for the LogicTrigLatency alert"
+        },
+        "allowedValues": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "defaultValue": "Low"
+      },
+      "LogicTrigLatencyPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigLatency Policy Effect",
+          "description": "Effect of the LogicTrigLatency policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "LogicTrigFailedAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigFailed Severity",
+          "description": "Severity of the LogicTrigFailed Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "LogicTrigFailedWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigFailed Window Size",
+          "description": "LogicTrigFailed Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "LogicTrigFailedEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigFailed Evaluation Frequency",
+          "description": "LogicTrigFailed Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "LogicTrigFailedAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigFailed Auto Mitigate",
+          "description": "Auto Mitigate for the LogicTrigFailed alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicTrigFailedAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigFailed Alert State",
+          "description": "Alert state for the LogicTrigFailed alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicTrigFailedThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigFailed Threshold",
+          "description": "Threshold for the LogicTrigFailed alert"
+        },
+        "defaultValue": "0"
+      },
+      "LogicTrigFailedPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigFailed Policy Effect",
+          "description": "Effect of the LogicTrigFailed policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "LogicTrigThrottledAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigThrottled Severity",
+          "description": "Severity of the LogicTrigThrottled Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "LogicTrigThrottledWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigThrottled Window Size",
+          "description": "LogicTrigThrottled Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "LogicTrigThrottledEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigThrottled Evaluation Frequency",
+          "description": "LogicTrigThrottled Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "LogicTrigThrottledAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigThrottled Auto Mitigate",
+          "description": "Auto Mitigate for the LogicTrigThrottled alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicTrigThrottledAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigThrottled Alert State",
+          "description": "Alert state for the LogicTrigThrottled alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "LogicTrigThrottledThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigThrottled Threshold",
+          "description": "Threshold for the LogicTrigThrottled alert"
+        },
+        "defaultValue": "0"
+      },
+      "LogicTrigThrottledPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "LogicTrigThrottled Policy Effect",
+          "description": "Effect of the LogicTrigThrottled policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "MLServicesFailedRunsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesFailedRuns Severity",
+          "description": "Severity of the MLServicesFailedRuns Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "MLServicesFailedRunsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesFailedRuns Window Size",
+          "description": "MLServicesFailedRuns Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "MLServicesFailedRunsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesFailedRuns Evaluation Frequency",
+          "description": "MLServicesFailedRuns Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "MLServicesFailedRunsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesFailedRuns Auto Mitigate",
+          "description": "Auto Mitigate for the MLServicesFailedRuns alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "MLServicesFailedRunsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesFailedRuns Alert State",
+          "description": "Alert state for the MLServicesFailedRuns alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "MLServicesFailedRunsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesFailedRuns Threshold",
+          "description": "Threshold for the MLServicesFailedRuns alert"
+        },
+        "defaultValue": "0"
+      },
+      "MLServicesFailedRunsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesFailedRuns Policy Effect",
+          "description": "Effect of the MLServicesFailedRuns policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "MLServicesModelDeployFailAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesModelDeployFail Severity",
+          "description": "Severity of the MLServicesModelDeployFail Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "MLServicesModelDeployFailWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesModelDeployFail Window Size",
+          "description": "MLServicesModelDeployFail Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "MLServicesModelDeployFailEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesModelDeployFail Evaluation Frequency",
+          "description": "MLServicesModelDeployFail Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "MLServicesModelDeployFailAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesModelDeployFail Auto Mitigate",
+          "description": "Auto Mitigate for the MLServicesModelDeployFail alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "MLServicesModelDeployFailAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesModelDeployFail Alert State",
+          "description": "Alert state for the MLServicesModelDeployFail alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "MLServicesModelDeployFailThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesModelDeployFail Threshold",
+          "description": "Threshold for the MLServicesModelDeployFail alert"
+        },
+        "defaultValue": "0"
+      },
+      "MLServicesModelDeployFailPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesModelDeployFail Policy Effect",
+          "description": "Effect of the MLServicesModelDeployFail policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "MLServicesNotRespondRunsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesNotRespondRuns Severity",
+          "description": "Severity of the MLServicesNotRespondRuns Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "MLServicesNotRespondRunsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesNotRespondRuns Window Size",
+          "description": "MLServicesNotRespondRuns Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "MLServicesNotRespondRunsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesNotRespondRuns Evaluation Frequency",
+          "description": "MLServicesNotRespondRuns Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "MLServicesNotRespondRunsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesNotRespondRuns Auto Mitigate",
+          "description": "Auto Mitigate for the MLServicesNotRespondRuns alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "MLServicesNotRespondRunsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesNotRespondRuns Alert State",
+          "description": "Alert state for the MLServicesNotRespondRuns alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "MLServicesNotRespondRunsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesNotRespondRuns Threshold",
+          "description": "Threshold for the MLServicesNotRespondRuns alert"
+        },
+        "defaultValue": "0"
+      },
+      "MLServicesNotRespondRunsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesNotRespondRuns Policy Effect",
+          "description": "Effect of the MLServicesNotRespondRuns policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "MLServicesQuotaUtilPercentAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesQuotaUtilPercent Severity",
+          "description": "Severity of the MLServicesQuotaUtilPercent Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "MLServicesQuotaUtilPercentWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesQuotaUtilPercent Window Size",
+          "description": "MLServicesQuotaUtilPercent Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "MLServicesQuotaUtilPercentEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesQuotaUtilPercent Evaluation Frequency",
+          "description": "MLServicesQuotaUtilPercent Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "MLServicesQuotaUtilPercentAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesQuotaUtilPercent Auto Mitigate",
+          "description": "Auto Mitigate for the MLServicesQuotaUtilPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "MLServicesQuotaUtilPercentAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesQuotaUtilPercent Alert State",
+          "description": "Alert state for the MLServicesQuotaUtilPercent alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "MLServicesQuotaUtilPercentThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesQuotaUtilPercent Threshold",
+          "description": "Threshold for the MLServicesQuotaUtilPercent alert"
+        },
+        "defaultValue": "90"
+      },
+      "MLServicesQuotaUtilPercentPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesQuotaUtilPercent Policy Effect",
+          "description": "Effect of the MLServicesQuotaUtilPercent policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "MLServicesUnusableNodesAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesUnusableNodes Severity",
+          "description": "Severity of the MLServicesUnusableNodes Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "MLServicesUnusableNodesWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesUnusableNodes Window Size",
+          "description": "MLServicesUnusableNodes Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "MLServicesUnusableNodesEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesUnusableNodes Evaluation Frequency",
+          "description": "MLServicesUnusableNodes Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "MLServicesUnusableNodesAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesUnusableNodes Auto Mitigate",
+          "description": "Auto Mitigate for the MLServicesUnusableNodes alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "MLServicesUnusableNodesAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesUnusableNodes Alert State",
+          "description": "Alert state for the MLServicesUnusableNodes alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "MLServicesUnusableNodesThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesUnusableNodes Threshold",
+          "description": "Threshold for the MLServicesUnusableNodes alert"
+        },
+        "defaultValue": "0"
+      },
+      "MLServicesUnusableNodesPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "MLServicesUnusableNodes Policy Effect",
+          "description": "Effect of the MLServicesUnusableNodes policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "ServiceBusNamespaceCpuUsageAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusNamespaceCpuUsage Severity",
+          "description": "Severity of the ServiceBusNamespaceCpuUsage Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "ServiceBusNamespaceCpuUsageWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusNamespaceCpuUsage Window Size",
+          "description": "ServiceBusNamespaceCpuUsage Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT15M"
+      },
+      "ServiceBusNamespaceCpuUsageEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusNamespaceCpuUsage Evaluation Frequency",
+          "description": "ServiceBusNamespaceCpuUsage Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ServiceBusNamespaceCpuUsageAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusNamespaceCpuUsage Auto Mitigate",
+          "description": "Auto Mitigate for the ServiceBusNamespaceCpuUsage alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ServiceBusNamespaceCpuUsageAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusNamespaceCpuUsage Alert State",
+          "description": "Alert state for the ServiceBusNamespaceCpuUsage alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ServiceBusNamespaceCpuUsageThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusNamespaceCpuUsage Threshold",
+          "description": "Threshold for the ServiceBusNamespaceCpuUsage alert"
+        },
+        "defaultValue": "85"
+      },
+      "ServiceBusNamespaceCpuUsagePolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusNamespaceCpuUsage Policy Effect",
+          "description": "Effect of the ServiceBusNamespaceCpuUsage policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "ServiceBusNamespaceMemoryUsageAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusNamespaceMemoryUsage Severity",
+          "description": "Severity of the ServiceBusNamespaceMemoryUsage Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "ServiceBusNamespaceMemoryUsageWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusNamespaceMemoryUsage Window Size",
+          "description": "ServiceBusNamespaceMemoryUsage Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ServiceBusNamespaceMemoryUsageEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusNamespaceMemoryUsage Evaluation Frequency",
+          "description": "ServiceBusNamespaceMemoryUsage Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "ServiceBusNamespaceMemoryUsageAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusNamespaceMemoryUsage Auto Mitigate",
+          "description": "Auto Mitigate for the ServiceBusNamespaceMemoryUsage alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ServiceBusNamespaceMemoryUsageAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusNamespaceMemoryUsage Alert State",
+          "description": "Alert state for the ServiceBusNamespaceMemoryUsage alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ServiceBusNamespaceMemoryUsageThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusNamespaceMemoryUsage Threshold",
+          "description": "Threshold for the ServiceBusNamespaceMemoryUsage alert"
+        },
+        "defaultValue": "80"
+      },
+      "ServiceBusNamespaceMemoryUsagePolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusNamespaceMemoryUsage Policy Effect",
+          "description": "Effect of the ServiceBusNamespaceMemoryUsage policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "ServiceBusServerErrorsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusServerErrors Severity",
+          "description": "Severity of the ServiceBusServerErrors Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "ServiceBusServerErrorsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusServerErrors Window Size",
+          "description": "ServiceBusServerErrors Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ServiceBusServerErrorsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusServerErrors Evaluation Frequency",
+          "description": "ServiceBusServerErrors Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "ServiceBusServerErrorsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusServerErrors Auto Mitigate",
+          "description": "Auto Mitigate for the ServiceBusServerErrors alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ServiceBusServerErrorsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusServerErrors Alert State",
+          "description": "Alert state for the ServiceBusServerErrors alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ServiceBusServerErrorsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusServerErrors Threshold",
+          "description": "Threshold for the ServiceBusServerErrors alert"
+        },
+        "defaultValue": "0"
+      },
+      "ServiceBusServerErrorsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusServerErrors Policy Effect",
+          "description": "Effect of the ServiceBusServerErrors policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "ServiceBusServerSendLatencyAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusServerSendLatency Severity",
+          "description": "Severity of the ServiceBusServerSendLatency Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "2"
+      },
+      "ServiceBusServerSendLatencyWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusServerSendLatency Window Size",
+          "description": "ServiceBusServerSendLatency Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ServiceBusServerSendLatencyEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusServerSendLatency Evaluation Frequency",
+          "description": "ServiceBusServerSendLatency Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "ServiceBusServerSendLatencyAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusServerSendLatency Auto Mitigate",
+          "description": "Auto Mitigate for the ServiceBusServerSendLatency alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ServiceBusServerSendLatencyAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusServerSendLatency Alert State",
+          "description": "Alert state for the ServiceBusServerSendLatency alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ServiceBusServerSendLatencyThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusServerSendLatency Threshold",
+          "description": "Threshold for the ServiceBusServerSendLatency alert"
+        },
+        "defaultValue": "500"
+      },
+      "ServiceBusServerSendLatencyPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusServerSendLatency Policy Effect",
+          "description": "Effect of the ServiceBusServerSendLatency policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "ServiceBusThrottledRequestsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusThrottledRequests Severity",
+          "description": "Severity of the ServiceBusThrottledRequests Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "0"
+      },
+      "ServiceBusThrottledRequestsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusThrottledRequests Window Size",
+          "description": "ServiceBusThrottledRequests Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ServiceBusThrottledRequestsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusThrottledRequests Evaluation Frequency",
+          "description": "ServiceBusThrottledRequests Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT1M"
+      },
+      "ServiceBusThrottledRequestsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusThrottledRequests Auto Mitigate",
+          "description": "Auto Mitigate for the ServiceBusThrottledRequests alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ServiceBusThrottledRequestsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusThrottledRequests Alert State",
+          "description": "Alert state for the ServiceBusThrottledRequests alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ServiceBusThrottledRequestsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusThrottledRequests Threshold",
+          "description": "Threshold for the ServiceBusThrottledRequests alert"
+        },
+        "defaultValue": "10"
+      },
+      "ServiceBusThrottledRequestsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusThrottledRequests Policy Effect",
+          "description": "Effect of the ServiceBusThrottledRequests policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
+      },
+      "ServiceBusUserErrorsAlertSeverity": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusUserErrors Severity",
+          "description": "Severity of the ServiceBusUserErrors Alert"
+        },
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "defaultValue": "3"
+      },
+      "ServiceBusUserErrorsWindowSize": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusUserErrors Window Size",
+          "description": "ServiceBusUserErrors Window size for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ServiceBusUserErrorsEvaluationFrequency": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusUserErrors Evaluation Frequency",
+          "description": "ServiceBusUserErrors Evaluation frequency for the alert"
+        },
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "defaultValue": "PT5M"
+      },
+      "ServiceBusUserErrorsAutoMitigate": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusUserErrors Auto Mitigate",
+          "description": "Auto Mitigate for the ServiceBusUserErrors alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ServiceBusUserErrorsAlertEnabled": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusUserErrors Alert State",
+          "description": "Alert state for the ServiceBusUserErrors alert"
+        },
+        "allowedValues": [
+          "true",
+          "false"
+        ],
+        "defaultValue": "true"
+      },
+      "ServiceBusUserErrorsThreshold": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusUserErrors Threshold",
+          "description": "Threshold for the ServiceBusUserErrors alert"
+        },
+        "defaultValue": "0"
+      },
+      "ServiceBusUserErrorsPolicyEffect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "ServiceBusUserErrors Policy Effect",
+          "description": "Effect of the ServiceBusUserErrors policy"
+        },
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "defaultValue": "deployIfNotExists"
       }
     },
     "policyDefinitions": [
@@ -1654,6 +5906,1557 @@
           },
           "threshold": {
             "value": "[[parameters('CogSvcsRateLimitThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_CogSvcsServerErrors",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/3c550d9c-8276-4a61-b0cf-ef437a55e299",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('CogSvcsServerErrorsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('CogSvcsServerErrorsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('CogSvcsServerErrorsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('CogSvcsServerErrorsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('CogSvcsServerErrorsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('CogSvcsServerErrorsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('CogSvcsServerErrorsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_CogSvcsTotalErrors",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/e228ad2d-7f9f-4843-88e2-57f6d44c59e9",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('CogSvcsTotalErrorsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('CogSvcsTotalErrorsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('CogSvcsTotalErrorsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('CogSvcsTotalErrorsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('CogSvcsTotalErrorsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('CogSvcsTotalErrorsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('CogSvcsTotalErrorsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_ContInstCpuUsage",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/970af9d6-9212-420d-af7b-4fbd790a2596",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ContInstCpuUsageAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ContInstCpuUsageWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ContInstCpuUsageEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ContInstCpuUsagePolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ContInstCpuUsageAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ContInstCpuUsageAlertEnabled')]"
+          },
+          "alertSensitivity": {
+            "value": "[[parameters('ContInstCpuUsageAlertSensitivity')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_ContInstMemoryUsage",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/4758386e-12ee-411a-9e49-445b5c5c3051",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ContInstMemoryUsageAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ContInstMemoryUsageWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ContInstMemoryUsageEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ContInstMemoryUsagePolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ContInstMemoryUsageAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ContInstMemoryUsageAlertEnabled')]"
+          },
+          "alertSensitivity": {
+            "value": "[[parameters('ContInstMemoryUsageAlertSensitivity')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_ContSvcClusterAutoScaleUnscheduled",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/301ca0e3-fc88-4285-be99-a2a587c412f5",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ContSvcClusterAutoScaleUnscheduledAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ContSvcClusterAutoScaleUnscheduledWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ContSvcClusterAutoScaleUnscheduledEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ContSvcClusterAutoScaleUnscheduledPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ContSvcClusterAutoScaleUnscheduledAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ContSvcClusterAutoScaleUnscheduledAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('ContSvcClusterAutoScaleUnscheduledThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_ContSvcNodeAllocCpuCores",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/64a872f9-5ec6-4121-acad-edd12f4c3466",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ContSvcNodeAllocCpuCoresAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ContSvcNodeAllocCpuCoresWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ContSvcNodeAllocCpuCoresEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ContSvcNodeAllocCpuCoresPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ContSvcNodeAllocCpuCoresAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ContSvcNodeAllocCpuCoresAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('ContSvcNodeAllocCpuCoresThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_ContSvcNodeCpuPercent",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/1303e91d-bc80-4ec2-937e-1d179fc32b43",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ContSvcNodeCpuPercentAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ContSvcNodeCpuPercentWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ContSvcNodeCpuPercentEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ContSvcNodeCpuPercentPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ContSvcNodeCpuPercentAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ContSvcNodeCpuPercentAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('ContSvcNodeCpuPercentThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_ContSvcNodeDiskPercent",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/aa3c5697-5cca-4c16-a37e-94f1d580701e",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ContSvcNodeDiskPercentAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ContSvcNodeDiskPercentWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ContSvcNodeDiskPercentEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ContSvcNodeDiskPercentPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ContSvcNodeDiskPercentAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ContSvcNodeDiskPercentAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('ContSvcNodeDiskPercentThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_ContSvcNodeMemoryRssPercent",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/e89e023e-117b-4db4-bfb2-853849e273f5",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ContSvcNodeMemoryRssPercentAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ContSvcNodeMemoryRssPercentWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ContSvcNodeMemoryRssPercentEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ContSvcNodeMemoryRssPercentPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ContSvcNodeMemoryRssPercentAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ContSvcNodeMemoryRssPercentAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('ContSvcNodeMemoryRssPercentThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_ContSvcNodeMemoryWorkSetPercent",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/9ae2dfbf-d69b-4802-8497-8b7836bef5e9",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ContSvcNodeMemoryWorkSetPercentAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ContSvcNodeMemoryWorkSetPercentWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ContSvcNodeMemoryWorkSetPercentEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ContSvcNodeMemoryWorkSetPercentPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ContSvcNodeMemoryWorkSetPercentAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ContSvcNodeMemoryWorkSetPercentAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('ContSvcNodeMemoryWorkSetPercentThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_DataFactoryActFailRuns",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/980f53cb-3eef-4263-952e-e69709e2a6e7",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('DataFactoryActFailRunsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('DataFactoryActFailRunsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('DataFactoryActFailRunsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('DataFactoryActFailRunsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('DataFactoryActFailRunsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('DataFactoryActFailRunsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('DataFactoryActFailRunsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_DataFactoryIntRunAvailMem",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/e8fec7b1-ca81-48cd-a7ea-f81cc2fcb4a5",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('DataFactoryIntRunAvailMemAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('DataFactoryIntRunAvailMemWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('DataFactoryIntRunAvailMemEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('DataFactoryIntRunAvailMemPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('DataFactoryIntRunAvailMemAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('DataFactoryIntRunAvailMemAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('DataFactoryIntRunAvailMemThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_DataFactoryIntRunCpuPercent",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/473c5450-95cc-4f86-bb8a-d0a06edd1357",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('DataFactoryIntRunCpuPercentAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('DataFactoryIntRunCpuPercentWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('DataFactoryIntRunCpuPercentEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('DataFactoryIntRunCpuPercentPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('DataFactoryIntRunCpuPercentAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('DataFactoryIntRunCpuPercentAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('DataFactoryIntRunCpuPercentThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_DataFactoryPipeFailRuns",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/2dd0b760-3235-479d-86d4-c152ca76b7e8",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('DataFactoryPipeFailRunsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('DataFactoryPipeFailRunsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('DataFactoryPipeFailRunsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('DataFactoryPipeFailRunsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('DataFactoryPipeFailRunsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('DataFactoryPipeFailRunsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('DataFactoryPipeFailRunsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_DataFactoryTrigFailRuns",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/9c7bde49-f0c2-4a07-b150-5dc9464fcf29",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('DataFactoryTrigFailRunsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('DataFactoryTrigFailRunsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('DataFactoryTrigFailRunsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('DataFactoryTrigFailRunsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('DataFactoryTrigFailRunsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('DataFactoryTrigFailRunsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('DataFactoryTrigFailRunsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_EventGridSysTopDelFailCount",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/6584a39d-0795-4132-8c33-376d3926d21b",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('EventGridSysTopDelFailCountAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('EventGridSysTopDelFailCountWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('EventGridSysTopDelFailCountEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('EventGridSysTopDelFailCountPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('EventGridSysTopDelFailCountAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('EventGridSysTopDelFailCountAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('EventGridSysTopDelFailCountThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_EventGridSysTopPubFailCount",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/fb8bc2ae-26bc-45a1-b616-1f45ffb864ae",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('EventGridSysTopPubFailCountAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('EventGridSysTopPubFailCountWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('EventGridSysTopPubFailCountEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('EventGridSysTopPubFailCountPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('EventGridSysTopPubFailCountAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('EventGridSysTopPubFailCountAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('EventGridSysTopPubFailCountThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_EventGridTopDelFailCount",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/95865d3b-41d0-4ad6-b08b-a2dcfe0940a9",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('EventGridTopDelFailCountAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('EventGridTopDelFailCountWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('EventGridTopDelFailCountEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('EventGridTopDelFailCountPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('EventGridTopDelFailCountAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('EventGridTopDelFailCountAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('EventGridTopDelFailCountThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_EventGridTopPubFailCount",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/230c0173-8b36-4412-9617-3e096886a403",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('EventGridTopPubFailCountAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('EventGridTopPubFailCountWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('EventGridTopPubFailCountEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('EventGridTopPubFailCountPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('EventGridTopPubFailCountAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('EventGridTopPubFailCountAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('EventGridTopPubFailCountThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_EventHubNameCpuUsage",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/a9c1e74c-bd3a-438c-bd13-7a2fec2d172c",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('EventHubNameCpuUsageAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('EventHubNameCpuUsageWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('EventHubNameCpuUsageEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('EventHubNameCpuUsagePolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('EventHubNameCpuUsageAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('EventHubNameCpuUsageAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('EventHubNameCpuUsageThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_EventHubNameMemUsage",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/26972609-fbb4-4fb9-b7f8-7b99a06bb4e3",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('EventHubNameMemUsageAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('EventHubNameMemUsageWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('EventHubNameMemUsageEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('EventHubNameMemUsagePolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('EventHubNameMemUsageAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('EventHubNameMemUsageAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('EventHubNameMemUsageThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_EventHubQuotaExceedErrors",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/237493ef-15c0-4e87-80bc-f8c59dd897ce",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('EventHubQuotaExceedErrorsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('EventHubQuotaExceedErrorsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('EventHubQuotaExceedErrorsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('EventHubQuotaExceedErrorsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('EventHubQuotaExceedErrorsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('EventHubQuotaExceedErrorsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('EventHubQuotaExceedErrorsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_EventHubServerErrors",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/48581aa9-53ee-4467-b04c-402061fe40e8",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('EventHubServerErrorsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('EventHubServerErrorsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('EventHubServerErrorsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('EventHubServerErrorsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('EventHubServerErrorsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('EventHubServerErrorsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('EventHubServerErrorsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_EventHubThrottledReqs",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/48581aa9-53ee-4467-b04c-402061fe40e8",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('EventHubThrottledReqsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('EventHubThrottledReqsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('EventHubThrottledReqsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('EventHubThrottledReqsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('EventHubThrottledReqsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('EventHubThrottledReqsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('EventHubThrottledReqsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_EventHubUserErrors",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/b1700765-b168-4ad4-a73e-f3a93a6bf5cf",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('EventHubUserErrorsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('EventHubUserErrorsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('EventHubUserErrorsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('EventHubUserErrorsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('EventHubUserErrorsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('EventHubUserErrorsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('EventHubUserErrorsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_LogicActionLatency",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/d8bf77d2-8572-4392-8097-5e84f136513d",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('LogicActionLatencyAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('LogicActionLatencyWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('LogicActionLatencyEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('LogicActionLatencyPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('LogicActionLatencyAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('LogicActionLatencyAlertEnabled')]"
+          },
+          "alertSensitivity": {
+            "value": "[[parameters('LogicActionLatencyAlertSensitivity')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_LogicActionFailed",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/514f695a-4f11-4a28-9516-f7f3b5b1c53b",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('LogicActionFailedAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('LogicActionFailedWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('LogicActionFailedEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('LogicActionFailedPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('LogicActionFailedAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('LogicActionFailedAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('LogicActionFailedThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_LogicActionThrottled",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/5aa5790b-2bff-40b0-9099-38485b9a9e0a",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('LogicActionThrottledAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('LogicActionThrottledWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('LogicActionThrottledEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('LogicActionThrottledPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('LogicActionThrottledAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('LogicActionThrottledAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('LogicActionThrottledThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_LogicRunFailPercent",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/c4864d80-dd28-4344-a135-03b600920c06",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('LogicRunFailPercentAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('LogicRunFailPercentWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('LogicRunFailPercentEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('LogicRunFailPercentPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('LogicRunFailPercentAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('LogicRunFailPercentAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('LogicRunFailPercentThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_LogicRunLatency",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/eb44cbdc-a259-4354-9b54-2bc72f811440",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('LogicRunLatencyAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('LogicRunLatencyWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('LogicRunLatencyEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('LogicRunLatencyPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('LogicRunLatencyAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('LogicRunLatencyAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('LogicRunLatencyThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_LogicRunFailed",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/350cc22f-d202-4c7c-9239-cbdb3b71e14b",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('LogicRunFailedAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('LogicRunFailedWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('LogicRunFailedEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('LogicRunFailedPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('LogicRunFailedAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('LogicRunFailedAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('LogicRunFailedThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_LogicRunStartThrottled",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/6524b22c-661e-48cd-87e7-7ee9ddea7b8b",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('LogicRunStartThrottledAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('LogicRunStartThrottledWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('LogicRunStartThrottledEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('LogicRunStartThrottledPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('LogicRunStartThrottledAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('LogicRunStartThrottledAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('LogicRunStartThrottledThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_LogicRunThrottled",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/9d324d21-ab2b-48b7-a637-4b1d9891d6b5",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('LogicRunThrottledAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('LogicRunThrottledWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('LogicRunThrottledEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('LogicRunThrottledPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('LogicRunThrottledAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('LogicRunThrottledAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('LogicRunThrottledThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_LogicTrigLatency",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/114f7c8e-e285-487d-9e50-7fe160769167",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('LogicTrigLatencyAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('LogicTrigLatencyWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('LogicTrigLatencyEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('LogicTrigLatencyPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('LogicTrigLatencyAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('LogicTrigLatencyAlertEnabled')]"
+          },
+          "alertSensitivity": {
+            "value": "[[parameters('LogicTrigLatencyAlertSensitivity')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_LogicTrigFailed",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/0378fd1f-976e-4a32-aa2b-25003e7d6ee5",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('LogicTrigFailedAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('LogicTrigFailedWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('LogicTrigFailedEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('LogicTrigFailedPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('LogicTrigFailedAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('LogicTrigFailedAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('LogicTrigFailedThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_LogicTrigThrottled",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/42ae6a24-d545-4bbd-a7f9-8a3b6f977366",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('LogicTrigThrottledAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('LogicTrigThrottledWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('LogicTrigThrottledEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('LogicTrigThrottledPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('LogicTrigThrottledAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('LogicTrigThrottledAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('LogicTrigThrottledThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_MLServicesFailedRuns",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/c897902c-40a5-497b-a0ce-86c3eda7c61d",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('MLServicesFailedRunsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('MLServicesFailedRunsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('MLServicesFailedRunsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('MLServicesFailedRunsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('MLServicesFailedRunsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('MLServicesFailedRunsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('MLServicesFailedRunsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_MLServicesModelDeployFail",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/0337a76f-238e-4d4d-9cd1-48b205874dbb",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('MLServicesModelDeployFailAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('MLServicesModelDeployFailWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('MLServicesModelDeployFailEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('MLServicesModelDeployFailPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('MLServicesModelDeployFailAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('MLServicesModelDeployFailAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('MLServicesModelDeployFailThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_MLServicesNotRespondRuns",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/d3b80f22-9f1d-3038-86ff-c4dd5ba02d7a",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('MLServicesNotRespondRunsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('MLServicesNotRespondRunsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('MLServicesNotRespondRunsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('MLServicesNotRespondRunsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('MLServicesNotRespondRunsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('MLServicesNotRespondRunsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('MLServicesNotRespondRunsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_MLServicesQuotaUtilPercent",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/be3f1bfc-c21a-4399-9b9f-a33ebdc470cb",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('MLServicesQuotaUtilPercentAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('MLServicesQuotaUtilPercentWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('MLServicesQuotaUtilPercentEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('MLServicesQuotaUtilPercentPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('MLServicesQuotaUtilPercentAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('MLServicesQuotaUtilPercentAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('MLServicesQuotaUtilPercentThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_MLServicesUnusableNodes",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/a171bc0c-676f-464b-a7b5-e50cd6c612a2",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('MLServicesUnusableNodesAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('MLServicesUnusableNodesWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('MLServicesUnusableNodesEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('MLServicesUnusableNodesPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('MLServicesUnusableNodesAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('MLServicesUnusableNodesAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('MLServicesUnusableNodesThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_ServiceBusNamespaceCpuUsage",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/52ec94f5-0d89-434b-9d51-df92d69ba284",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ServiceBusNamespaceCpuUsageAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ServiceBusNamespaceCpuUsageWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ServiceBusNamespaceCpuUsageEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ServiceBusNamespaceCpuUsagePolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ServiceBusNamespaceCpuUsageAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ServiceBusNamespaceCpuUsageAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('ServiceBusNamespaceCpuUsageThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_ServiceBusNamespaceMemoryUsage",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/860d21ea-8c6a-4c78-ac40-f556eb02c3ac",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ServiceBusNamespaceMemoryUsageAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ServiceBusNamespaceMemoryUsageWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ServiceBusNamespaceMemoryUsageEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ServiceBusNamespaceMemoryUsagePolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ServiceBusNamespaceMemoryUsageAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ServiceBusNamespaceMemoryUsageAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('ServiceBusNamespaceMemoryUsageThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_ServiceBusServerErrors",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/c51c3514-1730-42f3-b8ae-f2980bd22d83",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ServiceBusServerErrorsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ServiceBusServerErrorsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ServiceBusServerErrorsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ServiceBusServerErrorsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ServiceBusServerErrorsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ServiceBusServerErrorsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('ServiceBusServerErrorsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_ServiceBusServerSendLatency",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/487c6beb-1468-4167-8eb6-e9b3ad8743b1",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ServiceBusServerSendLatencyAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ServiceBusServerSendLatencyWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ServiceBusServerSendLatencyEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ServiceBusServerSendLatencyPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ServiceBusServerSendLatencyAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ServiceBusServerSendLatencyAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('ServiceBusServerSendLatencyThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_ServiceBusThrottledRequests",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/19785707-24c9-4852-b92a-31732b86ee04",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ServiceBusThrottledRequestsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ServiceBusThrottledRequestsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ServiceBusThrottledRequestsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ServiceBusThrottledRequestsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ServiceBusThrottledRequestsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ServiceBusThrottledRequestsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('ServiceBusThrottledRequestsThreshold')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_ServiceBusUserErrors",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/a57a1cc4-4ec9-4d8f-a81d-7e18afe54948",
+        "parameters": {
+          "severity": {
+            "value": "[[parameters('ServiceBusUserErrorsAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('ServiceBusUserErrorsWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('ServiceBusUserErrorsEvaluationFrequency')]"
+          },
+          "effect": {
+            "value": "[[parameters('ServiceBusUserErrorsPolicyEffect')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('ServiceBusUserErrorsAutoMitigate')]"
+          },
+          "enabled": {
+            "value": "[[parameters('ServiceBusUserErrorsAlertEnabled')]"
+          },
+          "threshold": {
+            "value": "[[parameters('ServiceBusUserErrorsThreshold')]"
           },
           "MonitorDisableTagName": {
             "value": "[[parameters('ALZMonitorDisableTagName')]"

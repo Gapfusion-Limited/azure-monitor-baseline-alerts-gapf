@@ -117,6 +117,17 @@
         "description": "Assign HybridVM initiative"
       }
     },
+    "enableAMBAIntegrationServices": {
+      "type": "string",
+      "defaultValue": "Yes",
+      "allowedValues": [
+        "Yes",
+        "No"
+      ],
+      "metadata": {
+        "description": "Assign Integration Services initiative"
+      }
+    },
     "enableAMBAKeyManagement": {
       "type": "string",
       "defaultValue": "Yes",
@@ -401,6 +412,9 @@
         "managementAssignmentExcludedResources": {
           "value": []
         },
+        "integrationServicesAssignmentExcludedResources": {
+          "value": []
+        },
         "keyManagementAssignmentExcludedResources": {
           "value": []
         },
@@ -483,6 +497,10 @@
       "defaultValue": {}
     },
     "policyAssignmentParametersWeb": {
+      "type": "object",
+      "defaultValue": {}
+    },
+    "policyAssignmentParametersIntegrationServices": {
       "type": "object",
       "defaultValue": {}
     },
@@ -614,6 +632,7 @@
     "policyAssignmentParametersServiceHealth": "[union(variables('policyAssignmentParametersCommon'), parameters('policyAssignmentParametersServiceHealth'), variables('shNotificationAssetParameters'))]",
     "policyAssignmentParametersNotificationAssets": "[union(variables('policyAssignmentParametersCommon'), variables('notificationAssetParameters'), variables('notificationAssetSeverityParameters'))]",
     "policyAssignmentParametersHybridVM": "[union(variables('policyAssignmentParametersCommon'), parameters('policyAssignmentParametersHybridVM'), variables('uamiParameters'))]",
+    "policyAssignmentParametersIntegrationServices": "[union(variables('policyAssignmentParametersMonitorDisable'), parameters('policyAssignmentParametersIntegrationServices'))]",
     "policyAssignmentParametersKeyManagement": "[union(variables('policyAssignmentParametersCommon'), parameters('policyAssignmentParametersKeyManagement'))]",
     "policyAssignmentParametersLoadBalancing": "[union(variables('policyAssignmentParametersMonitorDisable'), parameters('policyAssignmentParametersLoadBalancing'))]",
     "policyAssignmentParametersNetworkChanges": "[union(variables('policyAssignmentParametersCommon'), parameters('policyAssignmentParametersNetworkChanges'))]",
@@ -627,6 +646,7 @@
       "policyDefinitionsAutomation": "[uri(deployment().properties.templateLink.uri, 'policyDefinitions/policies-Automation.json')]",
       "policyDefinitionsCompute": "[uri(deployment().properties.templateLink.uri, 'policyDefinitions/policies-Compute.json')]",
       "policyDefinitionsHybrid": "[uri(deployment().properties.templateLink.uri, 'policyDefinitions/policies-Hybrid.json')]",
+      "policyDefinitionsIntegrationServices": "[uri(deployment().properties.templateLink.uri, 'policyDefinitions/policies-IntegrationServices.json')]",
       "policyDefinitionsKeyManagement": "[uri(deployment().properties.templateLink.uri, 'policyDefinitions/policies-KeyManagement.json')]",
       "policyDefinitionsMonitoring": "[uri(deployment().properties.templateLink.uri, 'policyDefinitions/policies-Monitoring.json')]",
       "policyDefinitionsNetwork": "[uri(deployment().properties.templateLink.uri, 'policyDefinitions/policies-Network.json')]",
@@ -646,6 +666,7 @@
       "AMBAUamiResourceGroup": "[uri(deployment().properties.templateLink.uri, 'templates/resourceGroup.json')]",
       "AMBAUserAssignedManagedIdentity": "[uri(deployment().properties.templateLink.uri, 'templates/userAssignedManagedIdentity.json')]",
       "AMBAHybridVMInitiative": "[uri(deployment().properties.templateLink.uri, 'policyAssignments/DINE-HybridVMAssignment.json')]",
+      "AMBAIntegrationServicesInitiative": "[uri(deployment().properties.templateLink.uri, 'policyAssignments/DINE-IntegrationServicesAssignment.json')]",
       "AMBAKeyManagementInitiative": "[uri(deployment().properties.templateLink.uri, 'policyAssignments/DINE-KeyManagementAssignment.json')]",
       "AMBALoadBalancingInitiative": "[uri(deployment().properties.templateLink.uri, 'policyAssignments/DINE-LoadBalancingAssignment.json')]",
       "AMBANetworkChangesInitiative": "[uri(deployment().properties.templateLink.uri, 'policyAssignments/DINE-NetworkChangesAssignment.json')]",
@@ -664,6 +685,7 @@
       "policyDefinitionsAutomationDeploymentName": "[take(concat('amba-Policy-Automation', variables('deploymentSuffix')), 64)]",
       "policyDefinitionsComputeDeploymentName": "[take(concat('amba-Policy-Compute', variables('deploymentSuffix')), 64)]",
       "policyDefinitionsHybridDeploymentName": "[take(concat('amba-Policy-Hybrid', variables('deploymentSuffix')), 64)]",
+      "policyDefinitionsIntegrationServicesDeploymentName": "[take(concat('amba-Policy-IntegrationServices', variables('deploymentSuffix')), 64)]",
       "policyDefinitionsKeyManagementDeploymentName": "[take(concat('amba-Policy-KeyManagement', variables('deploymentSuffix')), 64)]",
       "policyDefinitionsMonitoringDeploymentName": "[take(concat('amba-Policy-Monitoring', variables('deploymentSuffix')), 64)]",
       "policyDefinitionsNetworkDeploymentName": "[take(concat('amba-Policy-Network', variables('deploymentSuffix')), 64)]",
@@ -682,6 +704,7 @@
       "AMBAManagementDeploymentName": "[take(concat('amba-Assignment-Management', variables('deploymentSuffix')), 64)]",
       "AMBAServiceHealthDeploymentName": "[take(concat('amba-Assignment-ServiceHealth', variables('deploymentSuffix')), 64)]",
       "AMBANotificationAssetsDeploymentName": "[take(concat('amba-Assignment-NotificationAssets', variables('deploymentSuffix')), 64)]",
+      "AMBAIntegrationServicesDeploymentName": "[take(concat('amba-Assignment-IntegrationServices', variables('deploymentSuffix')), 64)]",
       "AMBAKeyManagementDeploymentName": "[take(concat('amba-Assignment-KeyManagement', variables('deploymentSuffix')), 64)]",
       "AMBALoadBalancingDeploymentName": "[take(concat('amba-Assignment-LoadBalancing', variables('deploymentSuffix')), 64)]",
       "AMBANetworkChangesDeploymentName": "[take(concat('amba-Assignment-NetworkChanges', variables('deploymentSuffix')), 64)]",
@@ -699,6 +722,7 @@
       "pidCuaServiceHealthDeploymentName": "[take(concat('amba-pid-SH-', variables('cuaidServiceHealth'), '-' , uniqueString(deployment().location, parameters('enterpriseScaleCompanyPrefix'), parameters('currentDateTimeUtcNow'))), 64)]",
       "pidCuaNotificationAssetsDeploymentName": "[take(concat('amba-pid-Notification-', variables('cuaidNotificationAssets'), '-' , uniqueString(deployment().location, parameters('enterpriseScaleCompanyPrefix'), parameters('currentDateTimeUtcNow'))), 64)]",
       "pidCuaAMBAAcceleratorDeploymentName": "[take(concat('amba-pid-', variables('cuaidAMBAAccelerator'), '-' , uniqueString(deployment().location, parameters('enterpriseScaleCompanyPrefix'), parameters('currentDateTimeUtcNow'))), 64)]",
+      "pidCuaIntegrationServicesDeploymentName": "[take(concat('amba-pid-IntegrationServices-', uniqueString(deployment().location, parameters('enterpriseScaleCompanyPrefix'), parameters('currentDateTimeUtcNow'))), 64)]",
       "pidCuaKeyManagementDeploymentName": "[take(concat('amba-pid-KeyManagement-', variables('cuaidKeyManagement'), '-' , uniqueString(deployment().location, parameters('enterpriseScaleCompanyPrefix'), parameters('currentDateTimeUtcNow'))), 64)]",
       "pidCuaLoadBalancingDeploymentName": "[take(concat('amba-pid-LoadBalancing-', variables('cuaidLoadBalancing'), '-' , uniqueString(deployment().location, parameters('enterpriseScaleCompanyPrefix'), parameters('currentDateTimeUtcNow'))), 64)]",
       "pidCuaNetworkChangesDeploymentName": "[take(concat('amba-pid-NetworkChanges-', variables('cuaidNetworkChanges'), '-' , uniqueString(deployment().location, parameters('enterpriseScaleCompanyPrefix'), parameters('currentDateTimeUtcNow'))), 64)]",
@@ -917,6 +941,27 @@
         }
       }
     },
+    // Integration Services Policy Definitions
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2020-10-01",
+      "name": "[variables('deploymentNames').policyDefinitionsIntegrationServicesDeploymentName]",
+      "location": "[deployment().location]",
+      "scope": "[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'))]",
+      "dependsOn": [],
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "contentVersion": "1.0.0.0",
+          "uri": "[variables('deploymentUris').policyDefinitionsIntegrationServices]"
+        },
+        "parameters": {
+          "topLevelManagementGroupPrefix": {
+            "value": "[parameters('enterpriseScaleCompanyPrefix')]"
+          }
+        }
+      }
+    },
     // Key Management Policy Definitions
     {
       "type": "Microsoft.Resources/deployments",
@@ -1117,6 +1162,7 @@
         "[variables('deploymentNames').policyDefinitionsAutomationDeploymentName]",
         "[variables('deploymentNames').policyDefinitionsComputeDeploymentName]",
         "[variables('deploymentNames').policyDefinitionsHybridDeploymentName]",
+        "[variables('deploymentNames').policyDefinitionsIntegrationServicesDeploymentName]",
         "[variables('deploymentNames').policyDefinitionsKeyManagementDeploymentName]",
         "[variables('deploymentNames').policyDefinitionsMonitoringDeploymentName]",
         "[variables('deploymentNames').policyDefinitionsNetworkDeploymentName]",
@@ -1407,6 +1453,36 @@
           },
           "policyAssignmentExclusions": {
             "value": "[parameters('policyAssignmentExclusionList').hybridVMAssignmentPlatformExcludedResources.value]"
+          }
+        }
+      }
+    },
+    // Assigning AMBA Integration Services PolicySet to the Landing Zone management group if condition is true
+    {
+      "condition": "[equals(parameters('enableAMBAIntegrationServices'), 'Yes')]",
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2020-10-01",
+      "name": "[variables('deploymentNames').AMBAIntegrationServicesDeploymentName]",
+      "scope": "[concat('Microsoft.Management/managementGroups/', parameters('LandingZoneManagementGroup'))]",
+      "dependsOn": [
+        "[variables('deploymentNames').policySetDefinitionsDeploymentName]"
+      ],
+      "location": "[deployment().location]",
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "contentVersion": "1.0.0.0",
+          "uri": "[variables('deploymentUris').AMBAIntegrationServicesInitiative]"
+        },
+        "parameters": {
+          "topLevelManagementGroupPrefix": {
+            "value": "[parameters('enterpriseScaleCompanyPrefix')]"
+          },
+          "policyAssignmentParameters": {
+            "value": "[variables('policyAssignmentParametersIntegrationServices')]"
+          },
+          "policyAssignmentExclusions": {
+            "value": "[parameters('policyAssignmentExclusionList').integrationServicesAssignmentExcludedResources.value]"
           }
         }
       }
