@@ -4,7 +4,7 @@
   "name": "Alerting-IntegrationServices-2",
   "properties": {
     "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) for Integration Services - Part #2",
-    "description": "This initiative deploys Azure Monitor Baseline Alerts (AMBA-ALZ) to monitor Integration Services such as API Management (APIM), Cognitive Services (Azure AI), Container Instances, Data Factory, EventGrid, EventHub, Logic Apps, Machine Learning, Service Bus.",
+    "description": "This initiative deploys Azure Monitor Baseline Alerts (AMBA-ALZ) to monitor Integration Services such as Cognitive Services (Azure AI), Machine Learning.",
     "metadata": {
       "version": "1.0.0",
       "category": "Monitoring",
