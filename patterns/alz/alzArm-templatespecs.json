@@ -648,7 +648,7 @@
     "policyAssignmentParametersWeb": "[union(variables('policyAssignmentParametersCommon'), parameters('policyAssignmentParametersWeb'), variables('uamiParameters'))]",
     // Declaring all required deployment uri's used for deployments of composite ARM templates for ESLZ
     "deploymentUris": {
-      "policyDefinitionsAutomation": "/subscriptions/06235ed1-325e-4be8-9bd3-b197661b8ff3/resourceGroups/rg-templatespecs-01/providers/Microsoft.Resources/templateSpecs/policyDefinitionsAutomation-Test-1",
+      "policyDefinitionsAutomation": "/subscriptions/06235ed1-325e-4be8-9bd3-b197661b8ff3/resourceGroups/rg-templatespecs-01/providers/Microsoft.Resources/templateSpecs/policyDefinitionsAutomation-Test-1/versions/1.0",
       "policyDefinitionsCompute": "[uri(deployment().properties.templateLink.uri, 'policyDefinitions/policies-Compute.json')]",
       "policyDefinitionsHybrid": "[uri(deployment().properties.templateLink.uri, 'policyDefinitions/policies-Hybrid.json')]",
       "policyDefinitionsIntegrationServices": "[uri(deployment().properties.templateLink.uri, 'policyDefinitions/policies-IntegrationServices.json')]",
