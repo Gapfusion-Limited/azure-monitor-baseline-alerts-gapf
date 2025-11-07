@@ -5,7 +5,7 @@
   "properties": {
     "policyType": "Custom",
     "mode": "All",
-    "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) - ContainerService managedClusters cluster_autoscaler_unschedulable_pods_count Alert",
+    "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) - ContainerService cluster_autoscaler_unschedulable_pods_count Alert",
     "description": "Policy to Audit/Deploy ContainerService managedClusters cluster_autoscaler_unschedulable_pods_count Alert",
     "metadata": {
       "version": "1.0.0-preview",

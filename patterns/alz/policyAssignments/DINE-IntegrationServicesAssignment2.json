@@ -34,7 +34,7 @@
       "deployAMBAIntSvcs": "[concat('/providers/Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'), '/providers/Microsoft.Authorization/policySetDefinitions/Alerting-IntegrationServices-2')]"
     },
     "policyAssignmentNames": {
-      "ambaIntSvcs": "Deploy-AMBA-IntSvcs",
+      "ambaIntSvcs": "Deploy-AMBA-IntSvcs2",
       "description": "This initiative deploys Azure Monitor Baseline Alerts (AMBA-ALZ) to monitor Integration Services such as Cognitive Services (Azure AI), Machine Learning.",
       "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) for Integration Services - Part #2"
     },
