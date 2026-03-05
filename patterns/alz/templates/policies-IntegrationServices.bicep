@@ -108,10 +108,8 @@ var loadPolicyDefinitions = {
     loadTextContent('../../../services/DataFactory/factories/Deploy-DataFactory-PipelineFailedRuns-Alert.json')
     loadTextContent('../../../services/DataFactory/factories/Deploy-DataFactory-TriggerFailedRuns-Alert.json')
 
-    //EventGrid/systemTopics and /topics - https://azure.github.io/azure-monitor-baseline-alerts/services/EventGrid/systemTopics/ and https://azure.github.io/azure-monitor-baseline-alerts/services/EventGrid/topics/
+    //EventGrid/topics - https://azure.github.io/azure-monitor-baseline-alerts/services/EventGrid/topics/
 
-    loadTextContent('../../../services/EventGrid/systemTopics/Deploy-EventGrid-systemTopic-DeliveryAttemptFailCount-Alert.json')
-    loadTextContent('../../../services/EventGrid/systemTopics/Deploy-EventGrid-systemTopic-PublishFailCount-Alert.json')
     loadTextContent('../../../services/EventGrid/topics/Deploy-EventGrid-Topic-DeliveryAttemptFailCount-Alert.json')
     loadTextContent('../../../services/EventGrid/topics/Deploy-EventGrid-Topic-PublishFailCount-Alert.json')
 
